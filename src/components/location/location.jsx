@@ -89,9 +89,9 @@ export default function Location() {
                     <p className="text-blue-800 md:text-lg font-medium text-black">
                     Bosque Mariposa Alajuera
                     </p>
-                    <p className="text-sm md:text-base text-gray-700">
+                    {/* <p className="text-sm md:text-base text-gray-700">
                     Calle Principal 123, Ciudad
-                    </p>
+                    </p> */}
                     <p className="text-sm font-bold text-gray-500 mt-1">
                     3:00 PM
                     </p>
@@ -112,9 +112,9 @@ export default function Location() {
                     <p className="text-blue-800 md:text-lg font-medium text-black">
                     Bosque Mariposa Alajuera
                     </p>
-                    <p className="text-sm md:text-base text-gray-700">
+                    {/* <p className="text-sm md:text-base text-gray-700">
                     Avenida Elegancia 456, Ciudad
-                    </p>
+                    </p> */}
                     <p className="text-sm font-bold text-gray-500 mt-1">
                     6:00 PM
                     </p>

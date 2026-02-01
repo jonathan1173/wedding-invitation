@@ -45,13 +45,10 @@ export default function Hero() {
         <div className="w-24 h-1 bg-white/50 mb-6 rounded-full"></div> 
         
         <p className="text-lg text-amber-50 md:text-2xl font-light italic opacity-90 mb-10 max-w-2xl">
-          "Una historia de amor que comienza para siempre"
+          "Las muchas aguas no podrán apagar el amor, ni lo ahogarán los ríos." - Cantar de los Cantares 8:7
         </p>
 
-        <div className="scale-90 md:scale-100 mb-12">
-            <CountdownClock />
-        </div>
-
+    
         {/* BOTÓN CONTROLADOR DE MÚSICA */}
         <button
           onClick={toggleMusic}
