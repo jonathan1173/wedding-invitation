@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   // --- LÓGICA DEL RELOJ ---
-  const targetDate = new Date("2026-02-10T12:00:00");
+  const targetDate = new Date("2026-02-05T15:00:00");
   const [timeLeft, setTimeLeft] = useState({
     days: "00",
     hours: "00",
