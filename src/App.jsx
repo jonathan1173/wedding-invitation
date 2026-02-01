@@ -10,6 +10,7 @@ import FinalSection from "./components/FinalSection/FinalSection";
 
 
 function App() {
+  
   return (
     <MusicProvider>
       <div className="App">
