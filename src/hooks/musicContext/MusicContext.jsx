@@ -1,6 +1,6 @@
 import { createContext, useContext, useRef, useState, useEffect } from "react";
 // Asegúrate de que la ruta sea correcta según tu estructura de carpetas
-import musicFile from "../../assets/music/PureLove.mp3";
+import musicFile from "../../assets/music/WhenGodMadeYou.mp3";
 
 const MusicContext = createContext();
 
