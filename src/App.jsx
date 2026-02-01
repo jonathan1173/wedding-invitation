@@ -8,6 +8,7 @@ import CountdownSection from "./components/count/CountdownClock";
 import Carousel3D from "./components/carousel/Carousel3D";
 import FinalSection from "./components/FinalSection/FinalSection";
 
+
 function App() {
   return (
     <MusicProvider>
