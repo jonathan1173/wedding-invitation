@@ -4,6 +4,7 @@ import { MusicProvider } from "./hooks/musicContext/MusicContext";
 import Location from "./components/location/location";
 import Gallery from "./components/gallery/Gallery";
 import StoryGallery from "./components/storyGallery/StoryGallery";
+import CountdownSection from "./components/count/CountdownClock";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <div className="App">
         <Hero />
         <Gallery />
+        <CountdownSection />
         <Location />
         <StoryGallery />
       </div>
