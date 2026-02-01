@@ -6,7 +6,7 @@ import Gallery from "./components/gallery/Gallery";
 import StoryGallery from "./components/storyGallery/StoryGallery";
 import CountdownSection from "./components/count/CountdownClock";
 import Carousel3D from "./components/carousel/Carousel3D";
-import FinalSection from "./components/FinalSection/FinalSection";
+import FinalSection from "./components/Footer/Footer";
 
 
 function App() {
