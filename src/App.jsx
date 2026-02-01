@@ -5,6 +5,8 @@ import Location from "./components/location/location";
 import Gallery from "./components/gallery/Gallery";
 import StoryGallery from "./components/storyGallery/StoryGallery";
 import CountdownSection from "./components/count/CountdownClock";
+import Carousel3D from "./components/carousel/Carousel3D";
+import FinalSection from "./components/FinalSection/FinalSection";
 
 function App() {
   return (
@@ -15,6 +17,9 @@ function App() {
         <CountdownSection />
         <Location />
         <StoryGallery />
+        <Carousel3D />
+        <FinalSection />
+   
       </div>
     </MusicProvider>
   );
