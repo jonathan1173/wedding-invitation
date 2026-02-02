@@ -124,7 +124,7 @@ export default function HeroSection() {
                z-20 
                w-[48%] sm:w-[36%] md:w-[38%] lg:w-[38%]
                left-[8%] sm:left-[18%] md:left-[12%] lg:left-[15%]
-               bottom-[20%] sm:bottom-[12%] md:bottom-[15%] lg:bottom-[10%]"
+               bottom-[24%] sm:bottom-[12%] md:bottom-[15%] lg:bottom-[10%]"
   >
     <img
       src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
@@ -143,7 +143,7 @@ export default function HeroSection() {
                z-30 
                w-[50%] sm:w-[35%] md:w-[42%] lg:w-[35%]
                right-[5%] sm:right-[10%] md:right-[6%] lg:right-[8%]
-               bottom-[5%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[5%]"
+               bottom-[10%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[5%]"
   >
     <img
       src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
