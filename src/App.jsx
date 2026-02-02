@@ -18,7 +18,7 @@ function App() {
         <Gallery />
         <CountdownSection />
         <Location />
-        <StoryGallery />
+        {/* <StoryGallery /> */}
         <Carousel3D />
         <FinalSection />
    

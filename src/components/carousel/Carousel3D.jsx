@@ -50,7 +50,7 @@ export default function Carousel3D() {
     else if (offset === -1) {
       return {
         opacity: 0.8,
-        transform: "translateX(-60%) translateZ(-300px) rotateY(45deg)",
+        transform: "translateX(-120%) translateZ(-300px) rotateY(45deg)",
         zIndex: 20,
         filter: "brightness(70%)", // Un poco oscurecida para dar profundidad
       };
@@ -60,7 +60,7 @@ export default function Carousel3D() {
     else if (offset === 1) {
       return {
         opacity: 0.8,
-        transform: "translateX(60%) translateZ(-300px) rotateY(-45deg)",
+        transform: "translateX(120%) translateZ(-300px) rotateY(-45deg)",
         zIndex: 20,
         filter: "brightness(70%)",
       };
