@@ -6,7 +6,7 @@ export default function FinalSection() {
   return (
     // CAMBIO 1: Usamos 'min-h-[100dvh]' para asegurar que cubra TODA la pantalla en móvil
     // y 'flex' para manejar el contenido mejor.
-    <footer className="relative w-full min-h-[100dvh] flex flex-col justify-end overflow-hidden">
+    <footer className="relative w-full min-h-[100dvh] flex flex-col justify-end overflow-hidden font-serif italic">
       
       {/* 1. IMAGEN DE FONDO */}
       <div className="absolute inset-0">

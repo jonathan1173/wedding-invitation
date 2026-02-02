@@ -1,1 +1,12 @@
 @import "tailwindcss";  
+
+/* Global typography: enforce serif italic across the app components */
+body, #root, main, .app, .container {
+	font-family: ui-serif, Georgia, 'Times New Roman', Times, serif;
+	font-style: italic;
+}
+
+/* Ensure elements that explicitly reset font-style still inherit italic */
+body * {
+	font-style: inherit;
+}

@@ -5,7 +5,7 @@ export default function Gallery() {
   const phrase = "Nuestro amor da un paso más y nos encantaría que seas parte de este día inolvidable.";
 
   return (
-    <section className="relative h-screen bg-amber-50 flex items-center justify-center overflow-hidden px-6 md:px-12 lg:px-24">
+    <section className="relative h-screen bg-amber-50 flex items-center justify-center overflow-hidden px-6 md:px-12 lg:px-24 font-serif italic">
 
       {/* --- Fondo decorativo --- */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">

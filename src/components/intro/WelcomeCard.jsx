@@ -20,7 +20,7 @@ export default function WelcomeCard({ onOpen }) {
     <AnimatePresence>
       {isVisible && (
         <motion.div 
-          className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-black"
+          className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-black font-serif italic"
           exit={{ opacity: 0, transition: { delay: 0.8 } }}
         >
           {/* 1. FONDO INICIAL: Solo tu imagen decorativa */}

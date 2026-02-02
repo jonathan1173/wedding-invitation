@@ -18,7 +18,7 @@ export default function StoryGallery() {
   ];
 
   return (
-    <section className="relative bg-amber-50 py-24 px-6 md:px-12 lg:px-24 overflow-hidden">
+    <section className="relative bg-amber-50 py-24 px-6 md:px-12 lg:px-24 overflow-hidden font-serif italic">
       
       {/* --- 1. MARCA DE AGUA (FONDO) --- */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">

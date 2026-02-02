@@ -11,7 +11,7 @@ export default function Location() {
   const linkReception = "https://maps.app.goo.gl/j1hx8pAeNvxauDDE6";
 
   return (
-    <section className="relative bg-amber-50 py-12 px-4 md:px-12 lg:px-24 text-gray-900">
+    <section className="relative bg-amber-50 py-12 px-4 md:px-12 lg:px-24 text-gray-900 font-serif italic">
       
       {/* Contenedor Principal: Alineación centrada y topeada para escritorio */}
       <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start max-w-7xl mx-auto">

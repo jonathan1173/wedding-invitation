@@ -17,7 +17,7 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative py-4 h-screen w-full overflow-hidden">
+    <section className="relative py-4 h-screen w-full overflow-hidden font-serif italic">
       
       {/* --- VIDEO DE FONDO --- */}
       {/* Se coloca absoluto y con z-0 para que quede al fondo */}

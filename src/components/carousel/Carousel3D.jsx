@@ -80,7 +80,7 @@ export default function Carousel3D() {
   };
 
   return (
-    <section className="bg-amber-50 py-20 px-4 w-full overflow-hidden">
+    <section className="bg-amber-50 py-20 px-4 w-full overflow-hidden font-serif italic">
       
       {/* TÍTULO
       <div className="text-center mb-16">

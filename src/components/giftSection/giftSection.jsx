@@ -13,7 +13,7 @@ const GiftSection = () => {
   };
 
   return (
-    <section className="bg-amber-50 py-16 px-6 flex flex-col items-center justify-center overflow-hidden">
+    <section className="bg-amber-50 py-16 px-6 flex flex-col items-center justify-center overflow-hidden font-serif italic">
       {/* Elemento Decorativo Superior (GSAP o Framer) */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
