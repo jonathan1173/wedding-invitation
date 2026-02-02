@@ -56,11 +56,11 @@ export default function HeroSection() {
         <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif italic text-blue-900 mb-6 drop-shadow-sm">
           Falta poco para...
         </h2>
-        <div className="w-full max-w-md h-2 mb-6 bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 rounded-full opacity-80 lg:mx-0 mx-auto"></div>
+        <div className="font-serif italic w-full max-w-md h-2 mb-6 bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 rounded-full opacity-80 lg:mx-0 mx-auto"></div>
         <h3 className="text-sm md:text-base font-bold tracking-[0.3em] text-blue-900 uppercase mb-10">
           El Gran Día
         </h3>
-        <div className="flex items-center justify-center lg:justify-start">
+        <div className="flex font-serif italic items-center justify-center lg:justify-start">
           <TimeBox value={timeLeft.days} label="DÍAS" />
           <Separator />
           <TimeBox value={timeLeft.hours} label="HORAS" />
