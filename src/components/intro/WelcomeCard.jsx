@@ -1,62 +1,81 @@
-// Asegúrate de importar la imagen arriba si estás usando Vite/Webpack
-// Si no, puedes dejar la ruta string como la tenías, pero importar es más seguro.
-import decoracionBg from '../../assets/images/decoracionBg.png'; // Ajusta la ruta
+"use client";
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import decoracionBg from '../../assets/images/ornamento-blue.webp';
 
 export default function WelcomeCard({ onOpen }) {
-  
+  const [isVisible, setIsVisible] = useState(true);
+
   const handleOpenClick = (e) => {
-    e.stopPropagation(); 
-    if (onOpen) onOpen();
+    e.stopPropagation();
+    window.scrollTo(0, 0); // Salto instantáneo
+    setIsVisible(false);
+    if (onOpen) {
+      setTimeout(() => onOpen(), 1000); // Tiempo para que se vea la explosión de color
+    }
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center bg-gray-800/80 backdrop-blur-lg transition-opacity duration-500 overflow-hidden">
-      
-      {/* --- ORNAMENTO 1: SUPERIOR DERECHO --- */}
-      {/* Rotado 180 para que la esquina apunte hacia adentro */}
-      <img 
-        src={decoracionBg} 
-        alt="Decoración" 
-        className="absolute top-[-20px] right-[-30px] w-[100%] md:w-[100%] max-w-[450px] rotate-180 z-0 pointer-events-none opacity-90"
-      />
+    <AnimatePresence>
+      {isVisible && (
+        <motion.div 
+          className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-black"
+          exit={{ opacity: 0, transition: { delay: 0.8 } }}
+        >
+          {/* 1. FONDO INICIAL: Solo tu imagen decorativa */}
+          <motion.div
+            className="absolute inset-0 bg-cover bg-center "
+            style={{ backgroundImage: `url(${decoracionBg})` }}
+            animate={{ scale: [1, 1.05, 1] }}
+            transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
+          />
+          
+          <div className="absolute inset-0 bg-black/30" />
 
-      {/* --- ORNAMENTO 2: INFERIOR IZQUIERDO --- */}
-      {/* Posición natural */}
-      <img 
-        src={decoracionBg} 
-        alt="Decoración" 
-        className="absolute bottom-[-20px] left-[-30px] w-[100%] md:w-[100%] max-w-[450px] z-0 pointer-events-none opacity-90"
-      />
+          {/* 2. EFECTO HERO (GRADIENTE): Solo aparece en el EXIT al tocar el botón */}
+          <motion.div 
+            className="absolute inset-0 z-20 pointer-events-none opacity-0"
+            exit={{ 
+              opacity: 1,
+              background: "linear-gradient(to bottom right, #FF8F5A, #FF6B39, #FF6B39)",
+              filter: "brightness(1.5) blur(50px)",
+              scale: 1.5,
+              transition: { duration: 0.8, ease: "easeIn" }
+            }}
+          />
 
-      {/* --- EL SOBRE (CARD) --- */}
-      <div 
-        onClick={handleOpenClick}
-        className="relative z-10 w-[350px] h-[220px] bg-gray-100 rounded-lg shadow-2xl cursor-pointer hover:scale-105 transition-transform duration-300 overflow-hidden"
-      >
-        
-        {/* Borde decorativo */}
-        <div className="absolute inset-0 border-2 border-gray-200 rounded-lg"></div>
-
-        {/* Solapa Superior */}
-        <div className="absolute top-[-110px] left-1/2 transform -translate-x-1/2 rotate-45 w-[220px] h-[220px] bg-white border-b-2 border-r-2 border-gray-300 shadow-sm z-10"></div>
-
-        {/* Sombras inferiores */}
-        <div className="absolute bottom-0 w-full h-full pointer-events-none">
-             <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[175px] border-b-[110px] border-l-transparent border-b-gray-200/50"></div>
-             <div className="absolute bottom-0 right-0 w-0 h-0 border-r-[175px] border-b-[110px] border-r-transparent border-b-gray-200/50"></div>
-        </div>
-
-        {/* Botón / Sello */}
-        <div className="absolute top-[85px] left-1/2 transform -translate-x-1/2 z-20">
-          <button 
+          {/* 3. CONTENIDO: La tarjeta */}
+          <motion.div 
             onClick={handleOpenClick}
-            className="w-14 h-12 bg-red-700 rounded-full border-4 border-red-800 shadow-lg flex items-center justify-center text-white font-serif font-bold text-xs hover:bg-red-600 transition-colors"
+            initial={{ y: 50, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            exit={{ 
+              scale: 2, 
+              opacity: 0, 
+              filter: "brightness(2) blur(10px)",
+              transition: { duration: 0.8 } 
+            }}
+            className="relative z-30 w-[350px] h-[220px] bg-white rounded-lg shadow-2xl cursor-pointer overflow-hidden"
           >
-            ABRIR
-          </button>
-        </div>
+            {/* Diseño interno del sobre */}
+            <div className="absolute inset-0 border-2 border-gray-100 m-1" />
+            <div className="absolute top-[-110px] left-1/2 transform -translate-x-1/2 rotate-45 w-[220px] h-[220px] bg-white border-b border-gray-200 z-10" />
+            
+            <div className="absolute bottom-0 w-full h-full pointer-events-none">
+              <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[175px] border-b-[110px] border-l-transparent border-b-gray-200/50" />
+              <div className="absolute bottom-0 right-0 w-0 h-0 border-r-[175px] border-b-[110px] border-r-transparent border-b-gray-200/50" />
+            </div>
 
-      </div>
-    </div>
-  )
+            {/* Sello / Botón */}
+            <div className="absolute top-[85px] left-1/2 transform -translate-x-1/2 z-20">
+              <button className="w-14 h-14 bg-red-700 rounded-full border-4 border-red-800 text-white font-bold text-[10px] shadow-xl">
+                ABRIR
+              </button>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
+    </AnimatePresence>
+  );
 }
