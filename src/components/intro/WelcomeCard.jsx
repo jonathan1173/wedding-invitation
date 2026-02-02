@@ -9,69 +9,110 @@ export default function WelcomeCard({ onOpen }) {
 
   const handleOpenClick = (e) => {
     e.stopPropagation();
-    window.scrollTo(0, 0); // Salto instantáneo
     setIsVisible(false);
     if (onOpen) {
-      setTimeout(() => onOpen(), 1000); // Tiempo para que se vea la explosión de color
+      setTimeout(() => onOpen(), 1000); 
     }
   };
 
   return (
     <AnimatePresence>
       {isVisible && (
-        <motion.div 
+        <motion.div
           className="fixed inset-0 z-[100] flex items-center justify-center overflow-hidden bg-black font-serif italic"
           exit={{ opacity: 0, transition: { delay: 0.8 } }}
         >
-          {/* 1. FONDO INICIAL: Solo tu imagen decorativa */}
+          {/* Fondo decorativo */}
           <motion.div
-            className="absolute inset-0 bg-cover bg-center "
+            className="absolute inset-0 bg-cover bg-center"
             style={{ backgroundImage: `url(${decoracionBg})` }}
             animate={{ scale: [1, 1.05, 1] }}
             transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
           />
-          
-          <div className="absolute inset-0 bg-black/30" />
 
-          {/* 2. EFECTO HERO (GRADIENTE): Solo aparece en el EXIT al tocar el botón */}
-          <motion.div 
-            className="absolute inset-0 z-20 pointer-events-none opacity-0"
-            exit={{ 
-              opacity: 1,
-              background: "linear-gradient(to bottom right, #FF8F5A, #FF6B39, #FF6B39)",
-              filter: "brightness(1.5) blur(50px)",
-              scale: 1.5,
-              transition: { duration: 0.8, ease: "easeIn" }
-            }}
-          />
+          <div className="absolute inset-0 bg-black/50" />
 
-          {/* 3. CONTENIDO: La tarjeta */}
-          <motion.div 
+          {/* TARJETA / SOBRE */}
+          <motion.div
             onClick={handleOpenClick}
             initial={{ y: 50, opacity: 0 }}
             animate={{ y: 0, opacity: 1 }}
-            exit={{ 
-              scale: 2, 
-              opacity: 0, 
+            whileHover="hover"
+            exit={{
+              scale: 2,
+              opacity: 0,
               filter: "brightness(2) blur(10px)",
-              transition: { duration: 0.8 } 
+              transition: { duration: 0.8 }
             }}
-            className="relative z-30 w-[350px] h-[220px] bg-white rounded-lg shadow-2xl cursor-pointer overflow-hidden"
+            className="relative z-30 w-[320px] md:w-[380px] h-[220px] cursor-pointer"
           >
-            {/* Diseño interno del sobre */}
-            <div className="absolute inset-0 border-2 border-gray-100 m-1" />
-            <div className="absolute top-[-110px] left-1/2 transform -translate-x-1/2 rotate-45 w-[220px] h-[220px] bg-white border-b border-gray-200 z-10" />
-            
-            <div className="absolute bottom-0 w-full h-full pointer-events-none">
-              <div className="absolute bottom-0 left-0 w-0 h-0 border-l-[175px] border-b-[110px] border-l-transparent border-b-gray-200/50" />
-              <div className="absolute bottom-0 right-0 w-0 h-0 border-r-[175px] border-b-[110px] border-r-transparent border-b-gray-200/50" />
-            </div>
+            {/* CUERPO DEL SOBRE */}
+            <div className="absolute inset-0 bg-[#cbd5e1] rounded-lg shadow-[0_35px_60px_-15px_rgba(0,0,0,0.6)] overflow-hidden border border-white/10">
+              
+              {/* 1. INTERIOR (Lo profundo) */}
+              <div className="absolute inset-0 bg-gray-400" />
 
-            {/* Sello / Botón */}
-            <div className="absolute top-[85px] left-1/2 transform -translate-x-1/2 z-20">
-              <button className="w-14 h-14 bg-red-700 rounded-full border-4 border-red-800 text-white font-bold text-[10px] shadow-xl">
-                ABRIR
-              </button>
+              {/* 2. SOLAPAS LATERALES (La X) */}
+              <div 
+                className="absolute inset-0 z-10"
+                style={{ 
+                  clipPath: 'polygon(0% 0%, 50% 50%, 0% 100%)',
+                  background: 'linear-gradient(to right, #d8dadc, #e2e8f0)' 
+                }}
+              />
+              <div 
+                className="absolute inset-0 z-10"
+                style={{ 
+                  clipPath: 'polygon(100% 0%, 50% 50%, 100% 100%)',
+                  background: 'linear-gradient(to left, #d8dadc, #e2e8f0)' 
+                }}
+              />
+
+              {/* 3. SOLAPA INFERIOR */}
+              <div 
+                className="absolute inset-0 z-20"
+                style={{ 
+                  clipPath: 'polygon(0% 100%, 50% 48%, 100% 100%)',
+                  background: 'linear-gradient(to top, #f1f5f9, #cbd5e1)',
+                  filter: 'drop-shadow(0px -2px 3px rgba(0,0,0,0.1))'
+                }}
+              />
+
+              {/* 4. SOLAPA SUPERIOR (MÁXIMA DEFINICIÓN) */}
+              <motion.div 
+                variants={{
+                  hover: { 
+                    y: -8,
+                    transition: { duration: 0.3 } 
+                  }
+                }}
+                className="absolute top-0 left-0 w-full h-[120px] z-30"
+                style={{ 
+                  clipPath: 'polygon(0% 0%, 100% 0%, 50% 100%)',
+                  background: 'linear-gradient(to bottom, #fdfdfd 60%, #f1f5f9 100%)',
+                  filter: 'drop-shadow(0px 5px 8px rgba(0,0,0,0.3))' // Sombra fuerte para definir el pico
+                }}
+              />
+
+              {/* SELLO CENTRAL */}
+              <div className="absolute top-[52%] left-1/2 -translate-x-1/2 -translate-y-1/2 z-40">
+                <motion.button 
+                  animate={{ scale: [1, 1.1, 1] }}
+                  transition={{ duration: 2, repeat: Infinity }}
+                  className="w-16 h-16 bg-red-700 rounded-full border-4 border-red-900 shadow-[0_10px_20px_rgba(185,28,28,0.4)] text-white font-bold text-[10px] flex items-center justify-center"
+                >
+                  ABRIR
+                </motion.button>
+              </div>
+
+              {/* LÍNEAS DE APOYO PARA LA "X" */}
+              <div className="absolute inset-0 z-25 pointer-events-none opacity-40">
+                <svg className="w-full h-full">
+                  <line x1="0" y1="0" x2="50%" y2="50%" stroke="#94a3b8" strokeWidth="1" />
+                  <line x1="100%" y1="0" x2="50%" y2="50%" stroke="#94a3b8" strokeWidth="1" />
+                </svg>
+              </div>
+
             </div>
           </motion.div>
         </motion.div>
