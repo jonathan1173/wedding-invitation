@@ -20,7 +20,7 @@ function App() {
         <Gallery />
         <CountdownSection />
         <Location />
-        {/* <StoryGallery /> */}
+        <StoryGallery />
         <DressCode />
         <GiftSection />
         {/* <Carousel3D /> */}

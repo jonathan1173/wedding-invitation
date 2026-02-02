@@ -23,7 +23,7 @@ export default function StoryGallery() {
       {/* --- 1. MARCA DE AGUA (FONDO) --- */}
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
         <img 
-            src={handBg} 
+           
             alt="Decoración de fondo" 
             className="w-[100%] md:w-[70%] opacity-5 object-contain mix-blend-multiply grayscale contrast-125 rotate-180" 
         />
@@ -36,8 +36,15 @@ export default function StoryGallery() {
             <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-blue-900 leading-loose drop-shadow-sm px-4">
                 {mainText}
             </h2>
+            <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-blue-900 leading-loose drop-shadow-sm px-4">
+                “{bibleVerse}” 
+                <br/>
+                 {bibleRef}
+            </h2>
             <div className="w-24 h-1 bg-blue-800/20 mx-auto mt-8 rounded-full"></div>
         </div>
+
+     
 
         {/* --- 3. GALERÍA --- */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 w-full mb-20 items-center">
@@ -65,31 +72,6 @@ export default function StoryGallery() {
             </div>
         </div>
 
-        {/* --- 4. VERSÍCULO BÍBLICO (CORREGIDO) --- */}
-        {/* Usamos un contenedor más estrecho (max-w-2xl) y fondo sólido (bg-white) */}
-        <div className="w-full max-w-2xl mx-auto">
-            <div className="relative bg-white py-10 px-8 md:px-12 rounded-lg shadow-xl border border-blue-50 text-center">
-                
-                {/* Comillas decorativas grandes y sutiles */}
-                <Quote className="absolute top-4 left-6 w-10 h-10 text-blue-100 fill-current opacity-50" />
-                
-                <div className="relative z-10">
-                    <p className="text-xl md:text-2xl font-serif text-blue-900 leading-relaxed mb-6 italic">
-                        “{bibleVerse}”
-                    </p>
-                    
-                    {/* Línea divisoria pequeña */}
-                    <div className="w-12 h-px bg-blue-200 mx-auto mb-4"></div>
-
-                    <p className="text-sm font-bold tracking-[0.2em] text-blue-800 uppercase">
-                        {bibleRef}
-                    </p>
-                </div>
-                
-                {/* Comillas cierre */}
-                <Quote className="absolute bottom-4 right-6 w-10 h-10 text-blue-100 fill-current opacity-50 rotate-180" />
-            </div>
-        </div>
 
       </div>
     </section>
