@@ -7,6 +7,8 @@ import StoryGallery from "./components/storyGallery/StoryGallery";
 import CountdownSection from "./components/count/CountdownClock";
 import Carousel3D from "./components/carousel/Carousel3D";
 import FinalSection from "./components/Footer/Footer";
+import DressCode from "./components/dressCode/DressCode";
+import GiftSection from "./components/giftSection/giftSection";
 
 
 function App() {
@@ -15,11 +17,13 @@ function App() {
     <MusicProvider>
       <div className="App">
         <Hero />
-        <Gallery />
+        {/* <Gallery /> */}
         <CountdownSection />
         <Location />
         {/* <StoryGallery /> */}
-        <Carousel3D />
+        <DressCode />
+        <GiftSection />
+        {/* <Carousel3D /> */}
         <FinalSection />
    
       </div>
