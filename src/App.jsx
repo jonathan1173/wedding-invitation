@@ -17,7 +17,7 @@ function App() {
     <MusicProvider>
       <div className="App">
         <Hero />
-        {/* <Gallery /> */}
+        <Gallery />
         <CountdownSection />
         <Location />
         {/* <StoryGallery /> */}

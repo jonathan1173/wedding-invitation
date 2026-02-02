@@ -74,7 +74,7 @@ export default function HeroSection() {
 
       {/* COLUMNA: IMÁGENES (Aparece arriba en móvil) */}
       {/* En móvil usamos posicionamiento relativo y grid para que no se encimen, en desktop absoluto */}
-<div className="bg-red-500 relative w-full lg:w-1/2 h-[700px] sm:h-[750px] md:h-[650px] lg:h-[750px] flex items-center justify-center overflow-hidden">
+<div className="relative w-full lg:w-1/2 h-[700px] sm:h-[750px] md:h-[650px] lg:h-[750px] flex items-center justify-center overflow-hidden">
   
   {/* 1. Arriba Izquierda */}
   <motion.figure 
