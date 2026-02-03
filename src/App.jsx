@@ -23,7 +23,7 @@ function App() {
         <StoryGallery />
         <DressCode />
         <GiftSection />
-        {/* <Carousel3D /> */}
+        <Carousel3D />
         <FinalSection />
    
       </div>

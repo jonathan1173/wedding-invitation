@@ -134,13 +134,6 @@ export default function Carousel3D() {
 
       </div>
 
-      {/* ESTILOS CSS PERSONALIZADOS PARA LA PERSPECTIVA */}
-      <style jsx>{`
-        .perspective-container {
-          perspective: 1000px; /* Clave para el efecto 3D */
-          transform-style: preserve-3d;
-        }
-      `}</style>
     </section>
   );
 }
