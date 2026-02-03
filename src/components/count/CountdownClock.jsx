@@ -53,13 +53,16 @@ export default function HeroSection() {
 
       {/* COLUMNA: EL RELOJ (Ahora aparece abajo en móvil) */}
       <div className="z-40 w-full lg:w-1/2 px-6 lg:px-12 py-12 flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h2 className="text-4xl md:text-5xl lg:text-7xl font-serif italic text-blue-900 mb-6 drop-shadow-sm">
-          Falta poco para...
+        <h2 className="text-2xl md:text-3xl font-serif italic text-blue-800 mb-4 text-center lg:text-left opacity-90">
+          Falta poco para…
         </h2>
-        <div className="font-serif italic w-full max-w-md h-2 mb-6 bg-gradient-to-r from-yellow-200 via-yellow-500 to-yellow-200 rounded-full opacity-80 lg:mx-0 mx-auto"></div>
-        <h3 className="text-sm md:text-base font-bold tracking-[0.3em] text-blue-900 uppercase mb-10">
+
+        <div className="w-full max-w-md h-2 mb-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300 rounded-full mx-auto lg:mx-0"></div>
+
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif italic font-bold text-blue-800 text-center lg:text-left mb-10 tracking-wide drop-shadow-md">
           El Gran Día
-        </h3>
+        </h2>
+
         <div className="flex font-serif italic items-center justify-center lg:justify-start">
           <TimeBox value={timeLeft.days} label="DÍAS" />
           <Separator />
@@ -74,85 +77,85 @@ export default function HeroSection() {
 
       {/* COLUMNA: IMÁGENES (Aparece arriba en móvil) */}
       {/* En móvil usamos posicionamiento relativo y grid para que no se encimen, en desktop absoluto */}
-<div className="relative w-full lg:w-1/2 h-[700px] sm:h-[750px] md:h-[650px] lg:h-[750px] flex items-center justify-center overflow-hidden">
-  
-  {/* 1. Arriba Izquierda */}
-  <motion.figure 
-    initial={{ opacity: 0, y: -20 }}
-    whileInView={{ opacity: 1, y: 0 }}
-    transition={{ delay: 0.2 }}
-    viewport={{ once: true }}
-    className="absolute 
+      <div className="relative w-full lg:w-1/2 h-[700px] sm:h-[750px] md:h-[650px] lg:h-[750px] flex items-center justify-center overflow-hidden">
+
+        {/* 1. Arriba Izquierda */}
+        <motion.figure
+          initial={{ opacity: 0, y: -20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ delay: 0.2 }}
+          viewport={{ once: true }}
+          className="absolute 
                z-10 
                w-[45%] sm:w-[40%] md:w-[35%] lg:w-[40%]
                left-[5%] sm:left-[8%] md:left-[10%] lg:left-[10%]
                top-[5%] sm:top-[7%] md:top-[8%] lg:top-[8%]"
-  >
-    <img
-      src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600"
-      alt="Boda 1"
-      className="rounded-xl shadow-xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
-    />
-  </motion.figure>
+        >
+          <img
+            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600"
+            alt="Boda 1"
+            className="rounded-xl shadow-xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
+          />
+        </motion.figure>
 
-  {/* 2. Arriba Derecha (Fondo) */}
-  <motion.figure 
-    initial={{ opacity: 0, x: 20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ delay: 0.4 }}
-    viewport={{ once: true }}
-    className="absolute 
+        {/* 2. Arriba Derecha (Fondo) */}
+        <motion.figure
+          initial={{ opacity: 0, x: 20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.4 }}
+          viewport={{ once: true }}
+          className="absolute 
                z-30 
                w-[50%] sm:w-[40%] md:w-[45%] lg:w-[38%]
                right-[5%] sm:right-[8%] md:right-[8%] lg:right-[10%]
                top-[25%] sm:top-[18%] md:top-[12%] lg:top-[15%]"
-  >
-    <img
-      src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=600"
-      alt="Celebración 1"
-      className="rounded-xl shadow-lg w-full border-2 md:border-4 border-white object-cover aspect-square"
-    />
-  </motion.figure>
+        >
+          <img
+            src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=600"
+            alt="Celebración 1"
+            className="rounded-xl shadow-lg w-full border-2 md:border-4 border-white object-cover aspect-square"
+          />
+        </motion.figure>
 
-  {/* 3. Abajo Izquierda (Intermedia) */}
-  <motion.figure 
-    initial={{ opacity: 0, x: -20 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    transition={{ delay: 0.6 }}
-    viewport={{ once: true }}
-    className="absolute 
+        {/* 3. Abajo Izquierda (Intermedia) */}
+        <motion.figure
+          initial={{ opacity: 0, x: -20 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          transition={{ delay: 0.6 }}
+          viewport={{ once: true }}
+          className="absolute 
                z-20 
                w-[48%] sm:w-[36%] md:w-[38%] lg:w-[38%]
                left-[8%] sm:left-[18%] md:left-[12%] lg:left-[15%]
                bottom-[24%] sm:bottom-[12%] md:bottom-[15%] lg:bottom-[10%]"
-  >
-    <img
-      src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
-      alt="Boda 2"
-      className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[3/4]"
-    />
-  </motion.figure>
+        >
+          <img
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
+            alt="Boda 2"
+            className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[3/4]"
+          />
+        </motion.figure>
 
-  {/* 4. Abajo Derecha (Frente/Principal) */}
-  <motion.figure 
-    initial={{ opacity: 0, scale: 0.8 }}
-    whileInView={{ opacity: 1, scale: 1 }}
-    transition={{ delay: 0.8 }}
-    viewport={{ once: true }}
-    className="absolute 
+        {/* 4. Abajo Derecha (Frente/Principal) */}
+        <motion.figure
+          initial={{ opacity: 0, scale: 0.8 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ delay: 0.8 }}
+          viewport={{ once: true }}
+          className="absolute 
                z-30 
                w-[50%] sm:w-[35%] md:w-[42%] lg:w-[35%]
                right-[5%] sm:right-[10%] md:right-[6%] lg:right-[8%]
                bottom-[10%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[5%]"
-  >
-    <img
-      src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
-      alt="Celebración 2"
-      className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
-    />
-  </motion.figure>
+        >
+          <img
+            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
+            alt="Celebración 2"
+            className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
+          />
+        </motion.figure>
 
-</div>
+      </div>
     </section>
   );
 }
