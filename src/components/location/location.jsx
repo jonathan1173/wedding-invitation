@@ -23,7 +23,7 @@ export default function Location() {
             <div className="flex gap-2">
                 <button 
                     onClick={() => setActiveLocation("ceremony")}
-                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
+                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-serif italic uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
                         ${activeLocation === "ceremony" 
                             ? "bg-blue-800 text-white border-blue-800 shadow-md" 
                             : "bg-white text-gray-600 border-transparent hover:bg-blue-50 hover:text-blue-800"}`}
@@ -32,7 +32,7 @@ export default function Location() {
                 </button>
                 <button 
                     onClick={() => setActiveLocation("reception")}
-                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-bold uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
+                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-serif italic uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
                         ${activeLocation === "reception" 
                             ? "bg-blue-800 text-white border-blue-800 shadow-md" 
                             : "bg-white text-gray-600 border-transparent hover:bg-blue-50 hover:text-blue-800"}`}
@@ -69,7 +69,7 @@ export default function Location() {
           
           <div>
             {/* Título un poco más pequeño para compactar */}
-            <h2 className="text-4xl text-blue-800 md:text-5xl font-serif italic text-black mb-6 drop-shadow-sm leading-tight">
+            <h2 className="text-3xl text-blue-800 md:text-5xl font-serif italic text-black mb-6 drop-shadow-sm leading-tight">
                 Nuestra Ubicación
             </h2>
 
@@ -83,10 +83,10 @@ export default function Location() {
                         : 'border-transparent hover:bg-black/5'
                     }`}
                 >
-                    <h3 className="text-xl md:text-2xl font-serif text-blue-900 mb-1 flex items-center gap-2">
+                    <h3 className="text-lg md:text-2xl font-serif italic text-blue-900 mb-1 flex items-center gap-2">
                     <Church className="w-5 h-5 text-blue-800" /> Ceremonia
                     </h3>
-                    <p className="text-blue-800 md:text-lg font-medium text-black">
+                    <p className="text-blue-800 md:text-lg font-serif italic text-black">
                     Bosque Mariposa Alajuera
                     </p>
                     {/* <p className="text-sm md:text-base text-gray-700">
@@ -106,10 +106,10 @@ export default function Location() {
                         : 'border-transparent hover:bg-black/5'
                     }`}
                 >
-                    <h3 className="text-xl md:text-2xl font-serif text-blue-900 mb-1 flex items-center gap-2">
+                    <h3 className="text-lg md:text-2xl font-serif italic text-blue-900 mb-1 flex items-center gap-2">
                     <PartyPopper className="w-5 h-5 text-blue-800" /> Recepción
                     </h3>
-                    <p className="text-blue-800 md:text-lg font-medium text-black">
+                    <p className="text-blue-800 md:text-lg font-serif italic text-black">
                     Bosque Mariposa Alajuera
                     </p>
                     {/* <p className="text-sm md:text-base text-gray-700">

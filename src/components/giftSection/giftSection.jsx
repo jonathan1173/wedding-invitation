@@ -22,10 +22,7 @@ const GiftSection = () => {
         className="mb-8 text-blue-800/40"
       >
         {/* Un icono elegante de sobre o detalle floral */}
-        <svg width="60" height="40" viewBox="0 0 60 40" fill="none" stroke="currentColor" strokeWidth="1">
-          <path d="M1 1L30 25L59 1" />
-          <rect x="1" y="1" width="58" height="38" />
-        </svg>
+        
       </motion.div>
 
       {/* Contenedor de Texto con Animación Escalonada */}
@@ -37,8 +34,7 @@ const GiftSection = () => {
       >
         <motion.h2 
           variants={fadeInUp}
-          className="text-blue-800 text-3xl md:text-4xl mb-6"
-          style={{ fontFamily: "'Great Vibes', cursive" }}
+          className="text-blue-800 text-4xl md:text-4xl mb-6 font-serif italic"
         >
           Muestra de Cariño
         </motion.h2>
@@ -50,7 +46,7 @@ const GiftSection = () => {
           {/* Líneas decorativas laterales sutiles */}
           <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
           
-          <p className="text-blue-800 text-lg md:text-xl font-light leading-relaxed italic px-8">
+          <p className="text-blue-800 md:text-xl font-serif text-lg italic px-2">
             "Nos sentimos profundamente honrados de compartir nuestra boda con ustedes; 
             si desean expresarnos su cariño con un obsequio en efectivo, 
             lo recibiremos con sincera gratitud."
