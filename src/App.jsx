@@ -10,6 +10,7 @@ import FinalSection from "./components/Footer/Footer";
 import DressCode from "./components/dressCode/DressCode";
 import GiftSection from "./components/giftSection/giftSection";
 import Participation from "./components/participation/Participation";
+import Boyfriends from "./components/boyfriends/boyfriends";
 
 function App() {
   
@@ -20,12 +21,13 @@ function App() {
         <Gallery />
         <CountdownSection />
         <Participation />
-        
         <Location />
         <StoryGallery />
         <DressCode />
         <GiftSection />
         <Carousel3D />
+        <Boyfriends />
+        
         <FinalSection />
    
       </div>
