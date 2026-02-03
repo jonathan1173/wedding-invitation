@@ -9,7 +9,7 @@ import Carousel3D from "./components/carousel/Carousel3D";
 import FinalSection from "./components/Footer/Footer";
 import DressCode from "./components/dressCode/DressCode";
 import GiftSection from "./components/giftSection/giftSection";
-
+import Participation from "./components/participation/Participation";
 
 function App() {
   
@@ -19,6 +19,8 @@ function App() {
         <Hero />
         <Gallery />
         <CountdownSection />
+        <Participation />
+        
         <Location />
         <StoryGallery />
         <DressCode />

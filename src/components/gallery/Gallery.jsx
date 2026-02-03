@@ -25,7 +25,7 @@ export default function Gallery() {
         </div>
 
         {/* Frase */}
-        <h2 className="text-3xl md:text-5xl lg:text-6xl font-serif italic text-blue-900 leading-tight max-w-4xl drop-shadow-sm">
+        <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-800 leading-tight max-w-4xl drop-shadow-sm">
           "{phrase}"
         </h2>
 

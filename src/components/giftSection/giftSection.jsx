@@ -13,7 +13,7 @@ const GiftSection = () => {
   };
 
   return (
-    <section className="bg-amber-50 py-16 px-6 flex flex-col items-center justify-center overflow-hidden font-serif italic">
+    <section className="h-screen bg-amber-50 py-16 px-6 flex flex-col items-center justify-center overflow-hidden font-serif italic">
       {/* Elemento Decorativo Superior (GSAP o Framer) */}
       <motion.div 
         initial={{ opacity: 0, scale: 0.8 }}
@@ -32,12 +32,12 @@ const GiftSection = () => {
         viewport={{ once: true, margin: "-100px" }}
         className="max-w-2xl text-center"
       >
-        <motion.h2 
+        {/* <motion.h2 
           variants={fadeInUp}
           className="text-blue-800 text-4xl md:text-4xl mb-6 font-serif italic"
         >
           Muestra de Cariño
-        </motion.h2>
+        </motion.h2> */}
 
         <motion.div 
           variants={fadeInUp}
@@ -46,7 +46,7 @@ const GiftSection = () => {
           {/* Líneas decorativas laterales sutiles */}
           <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
           
-          <p className="text-blue-800 md:text-xl font-serif text-lg italic px-2">
+          <p className="text-blue-800 md:text-3xl lg:text-4xl font-serif text-lg italic px-2">
             "Nos sentimos profundamente honrados de compartir nuestra boda con ustedes; 
             si desean expresarnos su cariño con un obsequio en efectivo, 
             lo recibiremos con sincera gratitud."

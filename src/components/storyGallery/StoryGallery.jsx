@@ -33,16 +33,16 @@ export default function StoryGallery() {
 
                 {/* --- 2. TEXTO SUPERIOR --- */}
                 <div className="max-w-4xl text-center mb-16">
-                    <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-900  drop-shadow-sm px-4">
+                    <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-800  drop-shadow-sm px-4">
                         {mainText}
                     </h2>
                     <br />
-                    <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-900  drop-shadow-sm px-4">
+                    <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-800  drop-shadow-sm px-4">
                         “{bibleVerse}”
 
                     </h2>
                     <br />
-                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-blue-900  drop-shadow-sm px-4">
+                    <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif italic text-blue-800  drop-shadow-sm px-4">
 
                         {bibleRef}
                     </h2>
