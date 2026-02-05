@@ -14,14 +14,14 @@ export default function Hero() {
   };
 
   return (
-    <section className="relative py-4 h-screen w-full overflow-hidden font-serif italic">
+    <section className="relative py-4 h-screen w-full overflow-hidden "> {/* Aplicada globalmente al componente si lo deseas */}
 
       {/* VIDEO */}
       <video
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
         autoPlay
         muted
-        loop  
+        loop
         playsInline
       >
         <source src={videoBg} type="video/mp4" />
@@ -51,22 +51,26 @@ export default function Hero() {
             visible: { opacity: 1, y: 0 }
           }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="text-sm md:text-lg uppercase tracking-[0.3em] font-light mb-4 opacity-90"
+          className="font-wedding text-sm md:text-lg uppercase tracking-[0.3em] mb-4 opacity-90"
         >
           Nuestra Boda
         </motion.p>
 
-        {/* TÍTULO */}
+        {/* TÍTULO PRINCIPAL */}
         <motion.h1
           variants={{
             hidden: { opacity: 0, y: 30 },
             visible: { opacity: 1, y: 0 }
           }}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true }}
           transition={{ duration: 1.6, ease: "easeOut" }}
-          className="text-6xl md:text-8xl lg:text-9xl mb-6 drop-shadow-lg leading-tight"
+          /* Usamos font-wedding aquí para los nombres */
+          className="font-wedding !text-white text-6xl md:text-8xl lg:text-9xl mb-6 drop-shadow-sm leading-tight italic"
         >
           <span className="tracking-wide">Julio</span>{" "}
-          <span className="text-4xl md:text-6xl align-middle text-gray-300 mx-2">&</span>{" "}
+          <span className="text-4xl md:text-6xl align-middle mx-2">&</span>{" "}
           <span className="tracking-wide">Scarleth</span>
         </motion.h1>
 
@@ -93,14 +97,14 @@ export default function Hero() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
               </span>
-              <span className="uppercase tracking-widest text-xs font-semibold">
+              <span className="font-serif italic uppercase text-xs font-semibold">
                 PAUSAR MÚSICA
               </span>
             </>
           ) : (
             <>
               <span className="h-3 w-3 rounded-full bg-red-500"></span>
-              <span className="uppercase tracking-widest text-xs font-semibold">
+              <span className="font-serif italic uppercase tracking-widest text-xs font-semibold">
                 REPRODUCIR MÚSICA
               </span>
             </>
