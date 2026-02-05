@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import WelcomeCard from "../intro/WelcomeCard";
 import { useMusic } from "../../hooks/musicContext/MusicContext";
 // Video en `public`
-const videoBg = "../../assets/video/playa.mp4";
+const videoBg = "/assets/video/playa.mp4";
 
 export default function Hero() {
   const { isPlaying, playMusic, toggleMusic } = useMusic();
