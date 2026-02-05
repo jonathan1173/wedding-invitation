@@ -46,7 +46,7 @@ const GiftSection = () => {
           {/* Líneas decorativas laterales sutiles */}
           <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
           
-          <p className="text-blue-800 md:text-3xl lg:text-4xl font-serif text-lg italic px-2">
+          <p className="font-wedding text-[var(--color-wedding)] text-3xl md:text-4xl lg:text-5xl  leading-relaxed  px-2">
             "Nos sentimos profundamente honrados de compartir nuestra boda con ustedes; 
             si desean expresarnos su cariño con un obsequio en efectivo, 
             lo recibiremos con sincera gratitud."

@@ -50,7 +50,7 @@ const DressCode = ({
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="border border-blue-800/30 p-6 md:p-8 mb-8 relative rounded-md bg-white shadow-sm"
                 >
-                    <p className=" text-lg md:text-3xl  lg:text-4xl italic leading-relaxed font-serif">
+                    <p className="font-wedding text-[var(--color-wedding)] text-2xl md:text-3xl lg:text-4xl  leading-relaxed font-serif">
                         Para mantener la armonía de esta celebración, le pedimos evitar los siguientes colores:
                     </p>
                 </motion.div>
