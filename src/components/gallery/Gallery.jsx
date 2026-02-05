@@ -21,11 +21,11 @@ export default function Gallery() {
         
         {/* Icono Heart */}
         <div className="flex justify-center mb-6">
-          <Heart className="text-blue-800 w-8 h-8 fill-blue-50/50" />
+          <Heart className="font-wedding text-[var(--color-wedding)] w-8 h-8 fill-blue-50/50" />
         </div>
 
         {/* Frase */}
-        <h2 className="text-lg md:text-3xl lg:text-4xl font-serif italic text-blue-800 leading-tight max-w-4xl drop-shadow-sm">
+        <h2 className="text-3xl md:text-4xl lg:text-5xl font-wedding text-[var(--color-wedding)] leading-tight max-w-4xl drop-shadow-sm">
           "{phrase}"
         </h2>
 
