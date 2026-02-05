@@ -14,7 +14,7 @@ export default function StoryGallery() {
     const gallery = [
         "src/assets/images/pareja/image-4.webp",
         "src/assets/images/pareja/image-6.webp",
-        "src/assets/images/pareja/image-5.webp",
+        "src/assets/images/pareja/image-7.webp",
     ];
 
     return (

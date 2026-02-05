@@ -22,17 +22,13 @@ export default function Boyfriends() {
         {/* IMAGEN DE FONDO */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop" 
+            src="src/assets/images/pareja/image-5.webp" 
             alt="Background" 
-            className="w-full h-full object-cover opacity-30" 
+            className="w-full h-full object-cover " 
           />
           <div className="absolute inset-0 bg-gradient-to-b from-white/40 via-transparent to-white/60" /> 
         </div>
 
-        {/* Adorno superior */}
-        <div className="absolute top-10 text-blue-800/40 text-3xl font-serif z-10">
-          ✝
-        </div>
 
         {/* Contenido con z-10 */}
         <div className="relative z-10 w-full mt-10">

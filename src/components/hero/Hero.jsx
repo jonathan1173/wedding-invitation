@@ -51,7 +51,7 @@ export default function Hero() {
             visible: { opacity: 1, y: 0 }
           }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="font-wedding text-sm md:text-lg uppercase tracking-[0.3em] mb-4 opacity-90"
+          className=" text-sm md:text-lg uppercase tracking-[0.3em] mb-4 opacity-90"
         >
           Nuestra Boda
         </motion.p>

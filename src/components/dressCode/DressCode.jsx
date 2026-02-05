@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const DressCode = ({
-    title = "Gala",
+    title = "Codigo de Vestimenta",
     prohibitedColors = [
         { name: "white", class: "bg-white border border-gray-200" },
         { name: "gold", class: "bg-gradient-to-tr from-amber-400 to-amber-200" },
@@ -27,7 +27,7 @@ const DressCode = ({
     return (
         <section className="bg-amber-50 ">
 
-            <div className="p-10 flex flex-col items-center text-center w-full max-w-3xl mx-auto rounded-md font-serif italic">
+            <div className="p-10 flex flex-col items-center text-center w-full max-w-3xl mx-auto rounded-md font-wedding text-[var(--color-wedding)]">
 
 
                 {/* Título */}
@@ -36,7 +36,7 @@ const DressCode = ({
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.8, delay: 0.2 }}
-                    className="text-4xl md:text-6xl text-blue-800 mb-8 font-serif italic"
+                    className="text-4xl md:text-6xl  mb-8 font-wedding text-[var(--color-wedding)]"
 
                 >
                     {title}
@@ -50,7 +50,7 @@ const DressCode = ({
                     transition={{ duration: 0.8, delay: 0.4 }}
                     className="border border-blue-800/30 p-6 md:p-8 mb-8 relative rounded-md bg-white shadow-sm"
                 >
-                    <p className="text-blue-800 text-lg md:text-3xl  lg:text-4xl italic leading-relaxed font-serif">
+                    <p className=" text-lg md:text-3xl  lg:text-4xl italic leading-relaxed font-serif">
                         Para mantener la armonía de esta celebración, le pedimos evitar los siguientes colores:
                     </p>
                 </motion.div>
