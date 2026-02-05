@@ -92,6 +92,7 @@ export default function HeroSection() {
                top-[5%] sm:top-[7%] md:top-[8%] lg:top-[8%]"
         >
           <img
+          loading="lazy"
             src="./src/assets/images/pareja/image-1.webp"
             alt="Boda 1"
             className="rounded-xl shadow-xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
@@ -111,6 +112,7 @@ export default function HeroSection() {
                top-[25%] sm:top-[18%] md:top-[12%] lg:top-[15%]"
         >
           <img
+          loading="lazy"
             src="./src/assets/images/pareja/image-2.webp"
             alt="Celebración 1"
             className="rounded-xl shadow-lg w-full border-2 md:border-4 border-white object-cover aspect-square"
@@ -130,6 +132,7 @@ export default function HeroSection() {
                bottom-[24%] sm:bottom-[12%] md:bottom-[15%] lg:bottom-[10%]"
         >
           <img
+          loading="lazy"
             src="./src/assets/images/pareja/image-3.webp"
             alt="Boda 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[3/4]"
@@ -149,6 +152,7 @@ export default function HeroSection() {
                bottom-[10%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[12%]"
         >
           <img
+          loading="lazy"
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
             alt="Celebración 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
