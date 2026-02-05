@@ -34,10 +34,10 @@ export default function HeroSection() {
 
   const TimeBox = ({ value, label }) => (
     <div className="flex flex-col items-center mx-2 md:mx-4">
-      <span className="text-4xl md:text-5xl lg:text-6xl font-serif text-blue-900 leading-none drop-shadow-sm">
+      <span className="text-5xl md:text-5xl lg:text-6xl font-wedding text-[var(--color-wedding)] font-bold leading-none drop-shadow-sm">
         {value}
       </span>
-      <span className="text-[10px] md:text-xs tracking-[0.2em] text-blue-800/60 uppercase mt-2 font-bold">
+      <span className="text-[10px] md:text-xs tracking-[0.2em] text-[var(--color-wedding)]/60 font-bold uppercase mt-2 font-bold">
         {label}
       </span>
     </div>
@@ -53,17 +53,17 @@ export default function HeroSection() {
 
       {/* COLUMNA: EL RELOJ (Ahora aparece abajo en móvil) */}
       <div className="z-40 w-full lg:w-1/2 px-6 lg:px-12 py-12 flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h2 className="text-2xl md:text-3xl font-serif italic text-blue-800 mb-4 text-center lg:text-left opacity-90">
+        <h2 className="font-wedding text-3xl md:text-4xl lg:text-5xl text-[var(--color-wedding)] mb-4 text-center lg:text-left opacity-90">
           Falta poco para…
         </h2>
 
         <div className="w-full max-w-md h-2 mb-6 bg-gradient-to-r from-yellow-300 via-yellow-500 to-yellow-300 rounded-full mx-auto lg:mx-0"></div>
 
-        <h2 className="text-5xl md:text-6xl lg:text-7xl font-serif italic font-bold text-blue-800 text-center lg:text-left mb-10 tracking-wide drop-shadow-md">
+        <h2 className="text-5xl md:text-6xl lg:text-7xl font-wedding font-bold text-[var(--color-wedding)] text-center lg:text-left mb-10 tracking-wide drop-shadow-md">
           El Gran Día
         </h2>
 
-        <div className="flex font-serif italic items-center justify-center lg:justify-start">
+        <div className="flex text-2xl md:text-3xl text-[var(--color-wedding)] font-bold items-center justify-center lg:justify-start">
           <TimeBox value={timeLeft.days} label="DÍAS" />
           <Separator />
           <TimeBox value={timeLeft.hours} label="HORAS" />
@@ -92,7 +92,7 @@ export default function HeroSection() {
                top-[5%] sm:top-[7%] md:top-[8%] lg:top-[8%]"
         >
           <img
-            src="https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=600"
+            src="./src/assets/images/pareja/image-1.webp"
             alt="Boda 1"
             className="rounded-xl shadow-xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
           />
@@ -111,7 +111,7 @@ export default function HeroSection() {
                top-[25%] sm:top-[18%] md:top-[12%] lg:top-[15%]"
         >
           <img
-            src="https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=600"
+            src="./src/assets/images/pareja/image-2.webp"
             alt="Celebración 1"
             className="rounded-xl shadow-lg w-full border-2 md:border-4 border-white object-cover aspect-square"
           />
@@ -130,7 +130,7 @@ export default function HeroSection() {
                bottom-[24%] sm:bottom-[12%] md:bottom-[15%] lg:bottom-[10%]"
         >
           <img
-            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
+            src="./src/assets/images/pareja/image-3.webp"
             alt="Boda 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[3/4]"
           />
@@ -146,7 +146,7 @@ export default function HeroSection() {
                z-30 
                w-[50%] sm:w-[35%] md:w-[42%] lg:w-[35%]
                right-[5%] sm:right-[10%] md:right-[6%] lg:right-[8%]
-               bottom-[10%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[5%]"
+               bottom-[10%] sm:bottom-[8%] md:bottom-[5%] lg:bottom-[12%]"
         >
           <img
             src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
