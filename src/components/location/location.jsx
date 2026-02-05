@@ -11,7 +11,7 @@ export default function Location() {
   const linkReception = "https://maps.app.goo.gl/j1hx8pAeNvxauDDE6";
 
   return (
-    <section className="relative bg-amber-50 py-12 px-4 md:px-12 lg:px-24 text-gray-900 font-serif italic">
+    <section className="relative bg-amber-50 py-12 px-4 md:px-12 lg:px-24 text-gray-900  text-[var(----color-wedding)]">
       
       {/* Contenedor Principal: Alineación centrada y topeada para escritorio */}
       <div className="flex flex-col md:flex-row gap-8 lg:gap-12 items-start max-w-7xl mx-auto">
@@ -23,18 +23,18 @@ export default function Location() {
             <div className="flex gap-2">
                 <button 
                     onClick={() => setActiveLocation("ceremony")}
-                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-serif italic uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
+                    className={`flex-1 font-serif italic py-2 px-4 rounded-lg text-xs md:text-sm  text-[var(--color-wedding)] uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
                         ${activeLocation === "ceremony" 
-                            ? "bg-blue-800 text-white border-blue-800 shadow-md" 
+                            ? "bg-[var(--color-wedding)] text-white border-blue-800 shadow-md" 
                             : "bg-white text-gray-600 border-transparent hover:bg-blue-50 hover:text-blue-800"}`}
                 >
                     <Church size={16} /> Ceremonia
                 </button>
                 <button 
                     onClick={() => setActiveLocation("reception")}
-                    className={`flex-1 py-2 px-4 rounded-lg text-xs md:text-sm font-serif italic uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
+                    className={`flex-1 font-serif italic py-2 px-4 rounded-lg text-xs md:text-sm  text-[var(--color-wedding)] uppercase tracking-wider transition-all duration-300 flex items-center justify-center gap-2 border
                         ${activeLocation === "reception" 
-                            ? "bg-blue-800 text-white border-blue-800 shadow-md" 
+                            ? "bg-[var(--color-wedding)] text-white border-blue-800 shadow-md" 
                             : "bg-white text-gray-600 border-transparent hover:bg-blue-50 hover:text-blue-800"}`}
                 >
                     <PartyPopper size={16} /> Recepción
@@ -69,7 +69,7 @@ export default function Location() {
           
           <div>
             {/* Título un poco más pequeño para compactar */}
-            <h2 className="text-3xl text-blue-800 md:text-5xl font-serif italic text-black mb-6 drop-shadow-sm leading-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-[var(--color-wedding)] font-wedding mb-6 drop-shadow-sm leading-tight">
                 Nuestra Ubicación
             </h2>
 
@@ -83,10 +83,10 @@ export default function Location() {
                         : 'border-transparent hover:bg-black/5'
                     }`}
                 >
-                    <h3 className="text-lg md:text-2xl font-serif italic text-blue-900 mb-1 flex items-center gap-2">
+                    <h3 className="text-lg md:text-2xl font-wedding text-[var(--color-wedding)] text-blue-900 mb-1 flex items-center gap-2">
                     <Church className="w-5 h-5 text-blue-800" /> Ceremonia
                     </h3>
-                    <p className="text-blue-800 md:text-lg font-serif italic text-black">
+                    <p className="text-[var(--color-wedding)] text-xl md:text-2xl lg:text-3xl font-semibold font-wedding ">
                     Bosque Mariposa Alajuera
                     </p>
                     {/* <p className="text-sm md:text-base text-gray-700">
@@ -106,10 +106,10 @@ export default function Location() {
                         : 'border-transparent hover:bg-black/5'
                     }`}
                 >
-                    <h3 className="text-lg md:text-2xl font-serif italic text-blue-900 mb-1 flex items-center gap-2">
+                    <h3 className="text-lg md:text-2xl font-wedding text-[var(--color-wedding)] text-blue-900 mb-1 flex items-center gap-2">
                     <PartyPopper className="w-5 h-5 text-blue-800" /> Recepción
                     </h3>
-                    <p className="text-blue-800 md:text-lg font-serif italic text-black">
+                    <p className="text-[var(--color-wedding)] text-xl md:text-2xl lg:text-3xl font-semibold font-wedding text-[var(--color-wedding)] ">
                     Bosque Mariposa Alajuera
                     </p>
                     {/* <p className="text-sm md:text-base text-gray-700">
@@ -130,7 +130,7 @@ export default function Location() {
                 href={activeLocation === 'ceremony' ? linkCeremony : linkReception}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-blue-800 px-8 py-3 text-white shadow-lg hover:bg-blue-900 hover:scale-[1.02] transition-all duration-300"
+                className="font-serif italic group w-full md:w-auto inline-flex items-center justify-center gap-2 rounded-full bg-[var(--color-wedding)] px-8 py-3 text-white shadow-lg hover:bg-blue-900 hover:scale-[1.02] transition-all duration-300"
             >
                 <MapPin className="h-4 w-4" />
                 <span className="uppercase tracking-widest text-xs font-bold">
