@@ -22,7 +22,7 @@ export default function Boyfriends() {
         {/* IMAGEN DE FONDO */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="src/assets/images/pareja/image-5.webp" 
+            src="/assets/images/pareja/image-5.webp" 
             alt="Background" 
             className="w-full h-full object-cover " 
           />

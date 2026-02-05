@@ -2,7 +2,8 @@
 
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import decoracionBg from '../../assets/images/ornamento-blue.webp';
+// Imagen en `public`
+const decoracionBg = '/assets/images/ornamento-blue.webp';
 
 export default function WelcomeCard({ onOpen }) {
   const [isVisible, setIsVisible] = useState(true);

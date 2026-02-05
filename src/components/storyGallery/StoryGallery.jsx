@@ -1,6 +1,6 @@
 import { Quote } from "lucide-react";
-// Ajusta la ruta a tu imagen de fondo
-import handBg from '../../assets/images/hand.png';
+// Imagen en `public`
+const handBg = '/assets/images/hand.png';
 
 export default function StoryGallery() {
     // TEXTO 1: El párrafo principal
@@ -12,18 +12,19 @@ export default function StoryGallery() {
 
     // IMÁGENES DE LA HISTORIA
     const gallery = [
-        "src/assets/images/pareja/image-4.webp",
-        "src/assets/images/pareja/image-6.webp",
-        "src/assets/images/pareja/image-7.webp",
+        "/assets/images/pareja/image-4.webp",
+        "/assets/images/pareja/image-6.webp",
+        "/assets/images/pareja/image-7.webp",
     ];
 
     return (
         <section className="relative bg-amber-50 py-24 px-6 md:px-12 lg:px-24 overflow-hidden font-serif italic">
 
             {/* --- 1. MARCA DE AGUA (FONDO) --- */}
-            <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
+                <div className="absolute inset-0 flex items-center justify-center pointer-events-none z-0">
                 <img
                     loading="lazy"
+                    src={handBg}
                     alt="Decoración de fondo"
                     className=" w-[100%] md:w-[70%] opacity-5 object-contain mix-blend-multiply grayscale contrast-125 rotate-180"
                 />

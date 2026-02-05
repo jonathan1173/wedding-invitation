@@ -1,5 +1,6 @@
 import { Heart } from "lucide-react";
-import handBg from '../../assets/images/hand.png'; 
+// Imagen en `public`
+const handBg = '/assets/images/hand.png'; 
 
 export default function Gallery() {
   const phrase = "Nuestro amor da un paso más y nos encantaría que seas parte de este día inolvidable.";

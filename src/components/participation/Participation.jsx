@@ -1,5 +1,6 @@
 import React from "react";
-import handBg from "../../assets/images/hand.png";
+// Imagen en `public`
+const handBg = "/assets/images/hand.png";
 
 const Participation = () => {
   return (
