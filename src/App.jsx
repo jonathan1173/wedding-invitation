@@ -11,6 +11,7 @@ import DressCode from "./components/dressCode/DressCode";
 import GiftSection from "./components/giftSection/giftSection";
 import Participation from "./components/participation/Participation";
 import Boyfriends from "./components/boyfriends/boyfriends";
+import Versiculo1 from "./components/versiculos/versiculo1";
 
 function App() {
   
@@ -19,16 +20,18 @@ function App() {
       <div className="App">
         <Hero />
         <Gallery />
-        <CountdownSection />
-        <Participation />
-        <Location />
-        <StoryGallery />
-        <DressCode />
-        <GiftSection />
-        <Carousel3D />
-        <Boyfriends />
+        <Versiculo1 />
         
-        <FinalSection />
+        {/* <CountdownSection /> */}
+        {/* <Participation /> */}
+        {/* <Location /> */}
+        {/* <StoryGallery /> */}
+        {/* <DressCode /> */}
+        {/* <GiftSection /> */}
+        {/* <Carousel3D /> */}
+        {/* <Boyfriends /> */}
+        
+        {/* <FinalSection /> */}
    
       </div>
     </MusicProvider>
