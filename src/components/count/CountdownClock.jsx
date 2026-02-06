@@ -52,8 +52,8 @@ export default function HeroSection() {
     <section className="relative w-full py-8 md:py-24 flex flex-col-reverse md:flex-row items-center overflow-hidden bg-amber-50 font-serif italic">
 
       {/* COLUMNA: EL RELOJ (Ahora aparece abajo en móvil) */}
-      <div className="z-40 w-full lg:w-1/2 px-6 lg:px-12 py-12 flex flex-col items-center lg:items-start text-center lg:text-left">
-        <h2 className="font-wedding text-3xl md:text-4xl lg:text-5xl text-[var(--color-wedding)] mb-4 text-center lg:text-left opacity-90">
+      <div className="z-40 w-full lg:w-1/2 px-6 lg:px-12  flex flex-col items-center lg:items-start text-center lg:text-left">
+        <h2 className="font-wedding font-semibold text-3xl md:text-4xl lg:text-5xl text-[var(--color-wedding)] mb-4 text-center lg:text-left opacity-90">
           Falta poco para…
         </h2>
 
@@ -153,7 +153,7 @@ export default function HeroSection() {
         >
           <img
           loading="lazy"
-            src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=600"
+            src="/assets/images/pareja/image-8.webp"
             alt="Celebración 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
           />

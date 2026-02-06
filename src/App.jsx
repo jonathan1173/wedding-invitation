@@ -22,7 +22,7 @@ function App() {
         <Gallery />
         <Versiculo1 />
         
-        {/* <CountdownSection /> */}
+        <CountdownSection />
         {/* <Participation /> */}
         {/* <Location /> */}
         {/* <StoryGallery /> */}
