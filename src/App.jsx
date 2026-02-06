@@ -12,6 +12,7 @@ import GiftSection from "./components/giftSection/giftSection";
 import Participation from "./components/participation/Participation";
 import Boyfriends from "./components/boyfriends/boyfriends";
 import Versiculo1 from "./components/versiculos/versiculo1";
+import WeddingCalendar from "./components/calendar/calendar";
 
 function App() {
   
@@ -21,8 +22,8 @@ function App() {
         <Hero />
         <Gallery />
         <Versiculo1 />
-        
         <CountdownSection />
+        <WeddingCalendar />
         {/* <Participation /> */}
         {/* <Location /> */}
         {/* <StoryGallery /> */}
