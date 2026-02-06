@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 
 const Participation = () => {
   return (
-    <section className="relative  bg-amber-50 flex flex-col items-center justify-center overflow-hidden px-6 p-6 ">
+    <section className="relative  bg-amber-50 flex flex-col items-center justify-center overflow-hidden px-6  ">
 
       {/* Contenedor padre con flex y centrado total */}
       <div className="flex items-center justify-center w-full">
-        <h1 className="font-wedding text-[var(--color-wedding)] text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-sm bg-white p-4 px-8 rounded-full text-center">
+        <h1 className="font-wedding text-[var(--color-wedding)] text-4xl md:text-5xl lg:text-6xl font-bold drop-shadow-sm p-4 px-8 rounded-full text-center">
           Ceremonia
         </h1>
       </div>

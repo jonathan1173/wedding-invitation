@@ -48,7 +48,7 @@ const DressCode = ({
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-bold bg-white px-8 py-3 rounded-full shadow-sm mb-6"
+                    className="text-4xl md:text-5xl font-bold px-8 py-3  mb-6"
                 >
                     {title}
                 </motion.h1>

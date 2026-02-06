@@ -30,11 +30,11 @@ function App() {
         <Location />
         <StoryGallery />
         <DressCode />
-        {/* <GiftSection /> */}
-        {/* <Carousel3D /> */}
-        {/* <Boyfriends /> */}
+        <GiftSection />
+        <Carousel3D />
+        <Boyfriends />
         
-        {/* <FinalSection /> */}
+        <FinalSection />
    
       </div>
     </MusicProvider>

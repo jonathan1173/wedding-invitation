@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const GiftSection = () => {
-  // Configuración de la animación
   const fadeInUp = {
     hidden: { opacity: 0, y: 20 },
     visible: { 
@@ -13,65 +12,66 @@ const GiftSection = () => {
   };
 
   return (
-    <section className="h-screen bg-amber-50 py-16 px-6 flex flex-col items-center justify-center overflow-hidden font-serif italic">
-      {/* Elemento Decorativo Superior (GSAP o Framer) */}
+    <section className="relative min-h-screen bg-amber-50 py-12 px-6 flex flex-col items-center justify-center overflow-hidden font-wedding italic">
+      
+      {/* 1. Ornamento Superior (Rotado) */}
       <motion.div 
-        initial={{ opacity: 0, scale: 0.8 }}
-        whileInView={{ opacity: 1, scale: 1 }}
+        initial={{ opacity: 0, y: -20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mb-8 text-blue-800/40"
+        transition={{ duration: 1 }}
+        className="mb-6"
       >
-        {/* Un icono elegante de sobre o detalle floral */}
-        
+        <img 
+          src="./assets/images/ornamentos/ornamento-6.png" 
+          alt="Decoración superior" 
+          className="w-full max-w-[200px] md:max-w-[350px] object-contain opacity-80 rotate-180"
+        />
       </motion.div>
 
-      {/* Contenedor de Texto con Animación Escalonada */}
+      {/* 2. Contenido de Texto */}
       <motion.div 
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
-        className="max-w-2xl text-center"
+        viewport={{ once: true, margin: "-50px" }}
+        className="max-w-3xl text-center z-10"
       >
-        {/* <motion.h2 
+        {/* Título Estilizado sin recuadro pesado */}
+        <motion.h2 
           variants={fadeInUp}
-          className="text-blue-800 text-4xl md:text-4xl mb-6 font-serif italic"
+          className="text-[var(--color-wedding)] text-4xl md:text-5xl lg:text-6xl mb-6 font-bold tracking-wide"
         >
           Muestra de Cariño
-        </motion.h2> */}
+        </motion.h2>
 
         <motion.div 
           variants={fadeInUp}
-          className="relative px-4"
+          className="px-4"
         >
-          {/* Líneas decorativas laterales sutiles */}
-          <div className="absolute left-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
-          
-          <p className="font-wedding text-[var(--color-wedding)] text-3xl md:text-4xl lg:text-5xl  leading-relaxed  px-2">
+          {/* Mensaje Principal con interlineado corregido */}
+          <p className="text-[var(--color-wedding)] text-3xl md:text-4xl lg:text-5xl leading-[1.15] px-2">
             "Nos sentimos profundamente honrados de compartir nuestra boda con ustedes; 
             si desean expresarnos su cariño con un obsequio en efectivo, 
             lo recibiremos con sincera gratitud."
           </p>
-
-          <div className="absolute right-0 top-0 bottom-0 w-[1px] bg-gradient-to-b from-transparent via-blue-800/20 to-transparent"></div>
         </motion.div>
-
- 
       </motion.div>
 
-      {/* Decoración Inferior: Una rosa o adorno similar al de la imagen original */}
+      {/* 3. Ornamento Inferior */}
       <motion.div 
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 0.6 }}
-        transition={{ delay: 0.5 }}
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        className="mt-12"
+        transition={{ duration: 1, delay: 0.2 }}
+        className="mt-8"
       >
-        <div className="h-[1px] w-24 bg-blue-800/30 mx-auto relative">
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 text-blue-800">
-            ❦
-          </div>
-        </div>
+        <img 
+          src="./assets/images/ornamentos/ornamento-6.png" 
+          alt="Decoración inferior" 
+          className="w-full max-w-[200px] md:max-w-[350px] object-contain opacity-80"
+        />
       </motion.div>
+
     </section>
   );
 };

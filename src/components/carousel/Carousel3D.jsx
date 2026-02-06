@@ -5,11 +5,12 @@ export default function Carousel3D() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   const images = [
-    "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=800&auto=format&fit=crop",
-    "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=800&auto=format&fit=crop",
+    "./assets/images/pareja/pareja-12.webp",
+    "./assets/images/pareja/pareja-13.webp",
+    "./assets/images/pareja/pareja-14.webp",
+    "./assets/images/pareja/pareja-15.webp",
+    "./assets/images/pareja/pareja-16.webp",
+    "./assets/images/pareja/pareja-17.webp",
   ];
 
   const handlePrev = () => {
@@ -73,6 +74,7 @@ export default function Carousel3D() {
           >
             <img
               src={img}
+              loading="lazy"
               alt={`Pre-wedding ${index}`}
               className="w-full h-full object-cover"
             />
