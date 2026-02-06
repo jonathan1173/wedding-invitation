@@ -15,7 +15,7 @@ export default function WeddingCalendar() {
   };
 
   return (
-    <section className="relative bg-amber-50 px-4 py-8 flex flex-col items-center justify-center font-wedding overflow-hidden min-h-[450px]">
+    <section className="relative bg-amber-50 px-4 flex flex-col items-center justify-center font-wedding overflow-hidden min-h-[450px]">
       
       {/* 1. Ornamento Superior - Pegado al contenido */}
       <div className="absolute top-6 w-full flex justify-center pointer-events-none">

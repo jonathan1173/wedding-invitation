@@ -13,6 +13,7 @@ import Participation from "./components/participation/Participation";
 import Boyfriends from "./components/boyfriends/boyfriends";
 import Versiculo1 from "./components/versiculos/versiculo1";
 import WeddingCalendar from "./components/calendar/calendar";
+import MobileShowcase from "./components/versiculos/versiculo2";
 
 function App() {
   
@@ -24,6 +25,8 @@ function App() {
         <Versiculo1 />
         <CountdownSection />
         <WeddingCalendar />
+        <MobileShowcase/>
+
         {/* <Participation /> */}
         {/* <Location /> */}
         {/* <StoryGallery /> */}
