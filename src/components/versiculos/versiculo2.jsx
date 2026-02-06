@@ -33,6 +33,7 @@ export default function MobileShowcase() {
             }`}
           >
             <img 
+            loading="lazy"
               src={src} 
               alt={`Pareja ${index + 1}`} 
               className="w-full max-w-[350px] lg:max-w-full h-auto drop-shadow-2xl rounded-md object-cover aspect-[3/4]"
