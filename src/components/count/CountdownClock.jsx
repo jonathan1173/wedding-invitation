@@ -49,7 +49,7 @@ export default function HeroSection() {
 
   return (
     /* CAMBIO CLAVE: flex-col-reverse para que el segundo div suba en móvil */
-    <section className="relative w-full py-8 md:py-24 flex flex-col-reverse md:flex-row items-center overflow-hidden bg-amber-50 font-serif italic">
+    <section className="relative w-full flex flex-col-reverse md:flex-row items-center overflow-hidden bg-amber-50 ">
 
       {/* COLUMNA: EL RELOJ (Ahora aparece abajo en móvil) */}
       <div className="z-40 w-full lg:w-1/2 px-6 lg:px-12  flex flex-col items-center lg:items-start text-center lg:text-left">
