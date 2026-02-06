@@ -1,41 +1,51 @@
 // src/App.jsx
-import Hero from "./components/hero/Hero";
+import React, { lazy, Suspense } from "react";
 import { MusicProvider } from "./hooks/musicContext/MusicContext"; 
-import Location from "./components/location/location";
-import Gallery from "./components/gallery/Gallery";
-import StoryGallery from "./components/storyGallery/StoryGallery";
-import CountdownSection from "./components/count/CountdownClock";
-import Carousel3D from "./components/carousel/Carousel3D";
-import FinalSection from "./components/Footer/Footer";
-import DressCode from "./components/dressCode/DressCode";
-import GiftSection from "./components/giftSection/giftSection";
-import Participation from "./components/participation/Participation";
-import Boyfriends from "./components/boyfriends/boyfriends";
-import Versiculo1 from "./components/versiculos/versiculo1";
-import WeddingCalendar from "./components/calendar/calendar";
-import MobileShowcase from "./components/versiculos/versiculo2";
+
+// Componentes Críticos (Carga inmediata para evitar parpadeos en el Hero)
+import Hero from "./components/hero/Hero";
+
+// Componentes Lazy (Se cargarán en segundo plano)
+const Gallery = lazy(() => import("./components/gallery/Gallery"));
+const Versiculo1 = lazy(() => import("./components/versiculos/versiculo1"));
+const CountdownSection = lazy(() => import("./components/count/CountdownClock"));
+const WeddingCalendar = lazy(() => import("./components/calendar/calendar"));
+const MobileShowcase = lazy(() => import("./components/versiculos/versiculo2"));
+const Participation = lazy(() => import("./components/participation/Participation"));
+const Location = lazy(() => import("./components/location/location"));
+const StoryGallery = lazy(() => import("./components/storyGallery/StoryGallery"));
+const DressCode = lazy(() => import("./components/dressCode/DressCode"));
+const GiftSection = lazy(() => import("./components/giftSection/giftSection"));
+const Carousel3D = lazy(() => import("./components/carousel/Carousel3D"));
+const Boyfriends = lazy(() => import("./components/boyfriends/boyfriends"));
+const FinalSection = lazy(() => import("./components/Footer/Footer"));
+
+// Placeholder elegante mientras carga
+const Loader = () => <div className="bg-amber-50 h-screen w-full" />;
 
 function App() {
-  
   return (
     <MusicProvider>
       <div className="App">
+        {/* El Hero se renderiza siempre para el LCP */}
         <Hero />
-        <Gallery />
-        <Versiculo1 />
-        <CountdownSection />
-        <WeddingCalendar />
-        <MobileShowcase/>
-        <Participation />
-        <Location />
-        <StoryGallery />
-        <DressCode />
-        <GiftSection />
-        <Carousel3D />
-        <Boyfriends />
         
-        <FinalSection />
-   
+        {/* El resto se carga bajo demanda */}
+        <Suspense fallback={<Loader />}>
+          <Gallery />
+          <Versiculo1 />
+          <CountdownSection />
+          <WeddingCalendar />
+          <MobileShowcase />
+          <Participation />
+          <Location />
+          <StoryGallery />
+          <DressCode />
+          <GiftSection />
+          <Carousel3D />
+          <Boyfriends />
+          <FinalSection />
+        </Suspense>
       </div>
     </MusicProvider>
   );
