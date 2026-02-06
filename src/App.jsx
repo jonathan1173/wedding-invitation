@@ -27,7 +27,7 @@ function App() {
         <WeddingCalendar />
         <MobileShowcase/>
 
-        {/* <Participation /> */}
+        <Participation />
         {/* <Location /> */}
         {/* <StoryGallery /> */}
         {/* <DressCode /> */}
