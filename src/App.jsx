@@ -26,11 +26,10 @@ function App() {
         <CountdownSection />
         <WeddingCalendar />
         <MobileShowcase/>
-
         <Participation />
-        {/* <Location /> */}
-        {/* <StoryGallery /> */}
-        {/* <DressCode /> */}
+        <Location />
+        <StoryGallery />
+        <DressCode />
         {/* <GiftSection /> */}
         {/* <Carousel3D /> */}
         {/* <Boyfriends /> */}
