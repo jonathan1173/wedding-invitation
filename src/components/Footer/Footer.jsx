@@ -15,9 +15,9 @@ export default function FinalSection() {
   className="h-full w-auto object-contain"
   style={{
     WebkitMaskImage:
-      'radial-gradient(ellipse 60% 75% at center, black 55%, transparent 72%)',
+      'radial-gradient(ellipse 80% 48% at center, black 55%, transparent 72%)',
     maskImage:
-      'radial-gradient(ellipse 60% 75% at center, black 55%, transparent 72%)',
+      'radial-gradient(ellipse 60% 50% at center, black 55%, transparent 72%)',
   }}
 />
 
