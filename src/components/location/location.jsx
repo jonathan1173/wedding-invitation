@@ -134,7 +134,7 @@ export default function Location() {
             >
                 <MapPin className="h-4 w-4" />
                 <span className="uppercase tracking-widest text-xs font-bold">
-                {activeLocation === 'ceremony' ? "Ver Iglesia en Maps" : "Ver Salón en Maps"}
+                {activeLocation === 'ceremony' ? "Ver Destino en Maps" : "Ver Salón en Maps"}
                 </span>
             </a>
           </div>

@@ -21,7 +21,7 @@ export default function Contact() {
 
         <div className="font-wedding text-[var(--color-wedding)] italic">
           <h2 className="text-4xl md:text-5xl lg:text-6xl leading-tight mb-6">
-            Nuestro “SI” será aún más especial si estás con nosotros.
+            Nuestro “Si” será aún más especial si estás con nosotros.
           </h2>
           
           <p className="not-italic font-sans tracking-[0.2em] text-sm md:text-base uppercase opacity-70 mb-10">

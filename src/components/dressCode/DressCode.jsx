@@ -61,7 +61,7 @@ const DressCode = ({
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
-                    className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-8 italic"
+                    className="text-3xl md:text-4xl lg:text-5xl leading-[1.1] mb-8 font-medium "
                 >
                     Para mantener la armonía de esta celebración, le pedimos evitar los siguientes colores:
                 </motion.p>
