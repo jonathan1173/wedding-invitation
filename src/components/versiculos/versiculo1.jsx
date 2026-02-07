@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Versiculo1() {
   return (
-    <section className="relative min-h-[70vh] flex items-center justify-center bg-amber-50 px-4  overflow-hidden">
+    <section className="relative py-4 flex items-center justify-center bg-amber-50 px-4  overflow-hidden">
       
       {/* Contenedor en Grid para superponer sin "encerrar" el texto en el centro */}
       <motion.div 

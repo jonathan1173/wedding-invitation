@@ -2,7 +2,7 @@ import { Heart } from "lucide-react";
 
 export default function Gallery() {
   return (
-    <section className="relative min-h-screen bg-amber-50 flex items-center justify-center py-10 px-6 font-serif italic">
+    <section className="relative bg-amber-50 flex items-center justify-center py-2 px-6 font-serif italic">
 
       {/* Contenedor Principal: Con espacio mínimo entre hijos (gap) */}
       <div className="relative z-10 flex flex-col items-center text-center max-w-2xl w-full gap-2">

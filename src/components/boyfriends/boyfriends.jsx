@@ -5,7 +5,7 @@ export default function Boyfriends() {
     /* Añadimos py-20 (padding vertical) para separar de otras secciones 
        y min-h-screen para que respire bien 
     */
-    <section className="bg-amber-50 min-h-screen flex items-center justify-center py-10 overflow-hidden">
+    <section className="bg-amber-50  flex items-center justify-center py-10 overflow-hidden">
       
       {/* Contenedor del Arco (Puerta Centrada) */}
       <motion.div 

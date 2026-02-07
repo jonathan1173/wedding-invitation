@@ -12,7 +12,7 @@ const GiftSection = () => {
   };
 
   return (
-    <section className="relative min-h-screen bg-amber-50 py-12 px-6 flex flex-col items-center justify-center overflow-hidden font-wedding italic">
+    <section className="relative  bg-amber-50 py-12 px-6 flex flex-col items-center justify-center overflow-hidden font-wedding italic">
       
       {/* 1. Ornamento Superior (Rotado) */}
       <motion.div 
