@@ -2,11 +2,10 @@
 import React, { lazy, Suspense } from "react";
 import { MusicProvider } from "./hooks/musicContext/MusicContext"; 
 
-// Componentes Críticos (Carga inmediata para evitar parpadeos en el Hero)
+// Componentes críticos
 import Hero from "./components/hero/Hero";
-import Versiculo3 from "./components/versiculos/versiculo3";
 
-// Componentes Lazy (Se cargarán en segundo plano)
+// Componentes lazy
 const Gallery = lazy(() => import("./components/gallery/Gallery"));
 const Versiculo1 = lazy(() => import("./components/versiculos/versiculo1"));
 const CountdownSection = lazy(() => import("./components/count/CountdownClock"));
@@ -20,21 +19,18 @@ const GiftSection = lazy(() => import("./components/giftSection/giftSection"));
 const Carousel3D = lazy(() => import("./components/carousel/Carousel3D"));
 const Boyfriends = lazy(() => import("./components/boyfriends/boyfriends"));
 const FinalSection = lazy(() => import("./components/Footer/Footer"));
-
 const Versiculo4 = lazy(() => import("./components/versiculos/versiculo3"));
+const GaleriaDuo = lazy(() => import("./components/galaxi/galaxi"));
 
-
-// Placeholder elegante mientras carga
+// Loader
 const Loader = () => <div className="bg-amber-50 h-screen w-full" />;
 
 function App() {
   return (
     <MusicProvider>
       <div className="App">
-        {/* El Hero se renderiza siempre para el LCP */}
         <Hero />
-        
-        {/* El resto se carga bajo demanda */}
+
         <Suspense fallback={<Loader />}>
           <Gallery />
           <Versiculo1 />
@@ -45,9 +41,10 @@ function App() {
           <Location />
           <StoryGallery />
           <DressCode />
+          <GaleriaDuo />
           <GiftSection />
           <Carousel3D />
-          <Versiculo3 />
+          <Versiculo4 />
           <Boyfriends />
           <FinalSection />
         </Suspense>

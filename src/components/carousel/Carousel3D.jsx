@@ -10,7 +10,12 @@ export default function Carousel3D() {
     "./assets/images/pareja/pareja-28.webp",
     "./assets/images/pareja/pareja-13.jpg",
     "./assets/images/pareja/pareja-10.jpg",
-    "./assets/images/pareja/pareja-14.jpg",
+    "./assets/images/pareja/pareja-15.jpg",
+    "./assets/images/pareja/pareja-12.jpg",
+    "./assets/images/pareja/pareja-7.jpg",
+    "./assets/images/pareja/pareja-6.jpg",
+    "./assets/images/pareja/pareja-2.jpg",
+  
   ];
 
   const handlePrev = () => {
