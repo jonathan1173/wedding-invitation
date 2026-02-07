@@ -4,6 +4,7 @@ import { MusicProvider } from "./hooks/musicContext/MusicContext";
 
 // Componentes Críticos (Carga inmediata para evitar parpadeos en el Hero)
 import Hero from "./components/hero/Hero";
+import Versiculo3 from "./components/versiculos/versiculo3";
 
 // Componentes Lazy (Se cargarán en segundo plano)
 const Gallery = lazy(() => import("./components/gallery/Gallery"));
@@ -19,6 +20,9 @@ const GiftSection = lazy(() => import("./components/giftSection/giftSection"));
 const Carousel3D = lazy(() => import("./components/carousel/Carousel3D"));
 const Boyfriends = lazy(() => import("./components/boyfriends/boyfriends"));
 const FinalSection = lazy(() => import("./components/Footer/Footer"));
+
+const Versiculo4 = lazy(() => import("./components/versiculos/versiculo3"));
+
 
 // Placeholder elegante mientras carga
 const Loader = () => <div className="bg-amber-50 h-screen w-full" />;
@@ -43,6 +47,7 @@ function App() {
           <DressCode />
           <GiftSection />
           <Carousel3D />
+          <Versiculo3 />
           <Boyfriends />
           <FinalSection />
         </Suspense>
