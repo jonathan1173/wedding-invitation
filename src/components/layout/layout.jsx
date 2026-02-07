@@ -1,55 +1,56 @@
 import { motion } from "framer-motion";
 
+
 export function Layout1() {
   return (
-    <section className="py-16 bg-amber-50 px-4">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-6">
-
-        {/* Imagen principal */}
+    <section className="py-16 bg-amber-50 px-4 overflow-hidden">
+      <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-y-12 md:gap-y-8 gap-x-6 items-center">
+        
+        {/* Imagen 1: Arriba Izquierda */}
         <motion.div
-          className="md:col-span-6 aspect-[4/5] rotate-[-0.5deg]"
-          initial={{ opacity: 0, x: -20 }}
-          whileInView={{ opacity: 1, x: 0 }}
+          className="md:col-span-6 aspect-[4/5] rotate-[-2deg]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
           <img
             src="./assets/images/pareja/pareja-8.jpg"
             alt="Pareja"
-            className="w-full h-full object-cover border-4 border-white rounded-md shadow-md"
+            className="w-full h-full object-cover border-4 border-white rounded-md shadow-xl"
           />
         </motion.div>
 
-        {/* Secundarias */}
-        <div className="md:col-span-6 grid grid-rows-2 gap-6">
-          <motion.div
-            className="aspect-[4/5] rotate-[0.5deg]"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
-          >
-            <img
-              src="./assets/images/pareja/pareja-4.jpg"
-              alt="Pareja"
-              className="w-full h-full object-cover border-4 border-white rounded-md shadow-sm"
-            />
-          </motion.div>
+        {/* Imagen 2: Arriba Derecha */}
+        <motion.div
+          className="md:col-span-6 aspect-[4/5] rotate-[2deg]"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src="./assets/images/pareja/pareja-4.jpg"
+            alt="Pareja"
+            className="w-full h-full object-cover border-4 border-white rounded-md shadow-xl"
+          />
+        </motion.div>
 
-          <motion.div
-            className="aspect-[4/5] rotate-[-0.5deg]"
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.5, delay: 0.1 }}
-            viewport={{ once: true }}
-          >
-            <img
-              src="./assets/images/pareja/pareja-9.jpg"
-              alt="Pareja"
-              className="w-full h-full object-cover border-4 border-white rounded-md shadow-sm"
-            />
-          </motion.div>
-        </div>
+        {/* Imagen 3: Abajo Centrada */}
+        {/* Usamos col-start-4 para centrar una caja de 6 columnas en un grid de 12 */}
+        <motion.div
+          className="md:col-span-6 md:col-start-4 aspect-[4/5] rotate-[-1deg] md:-mt-20 z-10"
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.7, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
+          <img
+            src="./assets/images/pareja/pareja-9.jpg"
+            alt="Pareja"
+            className="w-full h-full object-cover border-8 border-white rounded-md shadow-2xl"
+          />
+        </motion.div>
 
       </div>
     </section>
