@@ -7,9 +7,9 @@ export default function StoryGallery() {
 
     // IMÁGENES DE LA HISTORIA
     const gallery = [
-        "/assets/images/pareja/image-4.webp",
-        "/assets/images/pareja/image-6.webp",
-        "/assets/images/pareja/image-7.webp",
+        "/assets/images/pareja/pareja-5.jpg",
+        "/assets/images/pareja/pareja-23.webp",
+        "/assets/images/pareja/pareja-1.jpg",
     ];
 
     return (

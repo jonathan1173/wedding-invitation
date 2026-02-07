@@ -2,9 +2,9 @@ import { motion } from "framer-motion";
 
 export default function MobileShowcase() {
   const images = [
-    "./assets/images/pareja/pareja-9.webp",
-    "./assets/images/pareja/pareja-10.webp", // Esta bajará más en tablet
-    "./assets/images/pareja/pareja-11.webp",
+    "./assets/images/pareja/pareja-1.jpg",
+    "./assets/images/pareja/pareja-4.jpg", // Esta bajará más en tablet
+    "./assets/images/pareja/pareja-3.jpg",
   ];
 
   const variants = {

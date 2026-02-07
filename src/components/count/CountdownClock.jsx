@@ -93,7 +93,7 @@ export default function HeroSection() {
         >
           <img
           loading="lazy"
-            src="/assets/images/pareja/image-1.webp"
+            src="/assets/images/pareja/pareja-26.webp"
             alt="Boda 1"
             className="rounded-xl shadow-xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
           />
@@ -113,7 +113,7 @@ export default function HeroSection() {
         >
           <img
           loading="lazy"
-            src="/assets/images/pareja/image-2.webp"
+            src="/assets/images/pareja/pareja-25.webp"
             alt="Celebración 1"
             className="rounded-xl shadow-lg w-full border-2 md:border-4 border-white object-cover aspect-square"
           />
@@ -133,7 +133,7 @@ export default function HeroSection() {
         >
           <img
           loading="lazy"
-            src="/assets/images/pareja/image-3.webp"
+            src="/assets/images/pareja/pareja-20.webp"
             alt="Boda 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[3/4]"
           />
@@ -153,7 +153,7 @@ export default function HeroSection() {
         >
           <img
           loading="lazy"
-            src="/assets/images/pareja/image-8.webp"
+            src="/assets/images/pareja/pareja-21.webp"
             alt="Celebración 2"
             className="rounded-xl shadow-2xl w-full border-2 md:border-4 border-white object-cover aspect-[4/5]"
           />

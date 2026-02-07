@@ -5,12 +5,12 @@ export default function Carousel3D() {
   const [activeIndex, setActiveIndex] = useState(1);
 
   const images = [
-    "./assets/images/pareja/pareja-12.webp",
-    "./assets/images/pareja/pareja-13.webp",
-    "./assets/images/pareja/pareja-14.webp",
-    "./assets/images/pareja/pareja-15.webp",
-    "./assets/images/pareja/pareja-16.webp",
-    "./assets/images/pareja/pareja-17.webp",
+    "./assets/images/pareja/pareja-22.webp",
+    "./assets/images/pareja/pareja-24.webp",
+    "./assets/images/pareja/pareja-28.webp",
+    "./assets/images/pareja/pareja-13.jpg",
+    "./assets/images/pareja/pareja-10.jpg",
+    "./assets/images/pareja/pareja-14.jpg",
   ];
 
   const handlePrev = () => {
