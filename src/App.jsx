@@ -21,6 +21,7 @@ const Boyfriends = lazy(() => import("./components/boyfriends/boyfriends"));
 const FinalSection = lazy(() => import("./components/Footer/Footer"));
 const Versiculo4 = lazy(() => import("./components/versiculos/versiculo3"));
 const GaleriaDuo = lazy(() => import("./components/galaxi/galaxi"));
+const ConfirmacionWhatsApp = lazy(() => import("./components/contact/contact"));
 
 // Loader
 const Loader = () => <div className="bg-amber-50 h-screen w-full" />;
@@ -39,6 +40,7 @@ function App() {
           <MobileShowcase />
           <Participation />
           <Location />
+          <ConfirmacionWhatsApp />
           <StoryGallery />
           <DressCode />
           <GaleriaDuo />
