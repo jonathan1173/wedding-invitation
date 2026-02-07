@@ -14,7 +14,6 @@ export default function Carousel3D() {
     "./assets/images/pareja/pareja-12.jpg",
     "./assets/images/pareja/pareja-7.jpg",
     "./assets/images/pareja/pareja-6.jpg",
-    "./assets/images/pareja/pareja-2.jpg",
   
   ];
 

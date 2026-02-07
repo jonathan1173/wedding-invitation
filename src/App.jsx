@@ -22,6 +22,7 @@ const FinalSection = lazy(() => import("./components/Footer/Footer"));
 const Versiculo4 = lazy(() => import("./components/versiculos/versiculo3"));
 const GaleriaDuo = lazy(() => import("./components/galaxi/galaxi"));
 const ConfirmacionWhatsApp = lazy(() => import("./components/contact/contact"));
+import { Layout1, Layout2 , Layout3} from "./components/layout/layout";
 
 // Loader
 const Loader = () => <div className="bg-amber-50 h-screen w-full" />;
@@ -34,12 +35,15 @@ function App() {
 
         <Suspense fallback={<Loader />}>
           <Gallery />
+          <Layout1 />
           <Versiculo1 />
           <CountdownSection />
           <WeddingCalendar />
           <MobileShowcase />
+          <Layout3 /> 
           <Participation />
           <Location />
+          <Layout2 />
           <ConfirmacionWhatsApp />
           <StoryGallery />
           <DressCode />
