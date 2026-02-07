@@ -4,51 +4,65 @@
     const finalImage = "/assets/images/pareja/pareja-4.jpg";
 
     return (
-      // CAMBIO 1: Usamos 'min-h-[100dvh]' para asegurar que cubra TODA la pantalla en móvil
-      // y 'flex' para manejar el contenido mejor.
-      <footer className="relative w-full min-h-[100dvh] flex flex-col justify-center overflow-hidden font-serif italic">
+      <footer className="relative w-full min-h-[100dvh] flex flex-col justify-end overflow-hidden bg-blue-950 font-serif italic">
         
-        {/* 1. IMAGEN DE FONDO */}
-        <div className="absolute inset-0">
-          <img 
-            src={finalImage} 
-            alt="Despedida Novios" 
-            className=" h-full object-cover object-center"
-          />
+        {/* 1. IMAGEN CENTRADA CON DIFUMINADO LATERAL (SIN LÍNEAS) */}
+        <div className="absolute inset-0 z-0 flex items-center justify-center">
+          <div className="relative h-full w-full flex items-center justify-center">
+<img 
+  src={finalImage} 
+  alt="Despedida Novios" 
+  className="h-full w-auto object-contain" 
+  style={{
+    // Usamos una combinación de gradientes para asegurar que NINGÚN borde sea visible
+    WebkitMaskImage: `
+      linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)
+    `,
+    maskImage: `
+      linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%),
+      linear-gradient(to bottom, transparent 0%, black 15%, black 85%, transparent 100%)
+    `,
+    // Esta propiedad es CLAVE: hace que las dos máscaras se crucen correctamente
+    WebkitMaskComposite: 'source-in',
+    maskComposite: 'intersect',
+  }}
+/>
+            
+            {/* Overlay para suavizar la imagen y que no brille tanto */}
+            <div className="absolute inset-0 bg-blue-950/30 pointer-events-none"></div>
+          </div>
         </div>
 
-        {/* 2. DEGRADADO (Overlay) */}
-        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-900/40 to-transparent opacity-90"></div>
+        {/* 2. DEGRADADO DE FONDO (Para que el texto resalte) */}
+        <div className="absolute inset-0 bg-gradient-to-t from-blue-950 via-blue-950/60 to-transparent z-[5]"></div>
 
         {/* 3. CONTENIDO DEL TEXTO */}
-        {/* CAMBIO 2: Quitamos 'absolute inset-0' y dejamos que el flex del padre maneje la posición. 
-            Esto evita que el texto se corte arriba si la pantalla es muy pequeña. */}
-        <div className="relative z-10 w-full flex flex-col items-center pb-12 px-6 text-center md:pb-20">
+        <div className="relative z-10 w-full flex flex-col items-center pb-16 px-6 text-center md:pb-24">
           
           {/* Icono decorativo */}
-          <div className="mb-4 md:mb-6 animate-bounce duration-[2000ms]">
-              <Heart className="w-8 h-8 text-white/80 fill-white/20" />
+          <div className="mb-6 md:mb-8 animate-pulse">
+              <Heart className="w-10 h-10 text-white/90 fill-white/30" />
           </div>
 
           {/* Mensaje de Despedida */}
-          {/* Ajustamos tamaños de texto para móvil */}
-          <h2 className="text-5xl md:text-7xl lg:text-8xl font-serif italic text-white mb-4 md:mb-6 drop-shadow-lg leading-tight">
+          <h2 className="text-6xl md:text-8xl lg:text-9xl font-wedding text-white mb-6 drop-shadow-2xl leading-tight">
             ¡Los Esperamos!
           </h2>
 
-          <p className="text-base md:text-2xl text-blue-100 font-light max-w-2xl leading-relaxed drop-shadow-md px-4">
+          <p className="text-lg md:text-2xl text-blue-100 font-light max-w-2xl leading-relaxed drop-shadow-md px-4 opacity-90">
             Gracias por ser parte de nuestra historia y acompañarnos en el comienzo de este nuevo capítulo.
           </p>
 
           {/* Hashtag de la Boda */}
-          <div className="mt-8 md:mt-12 border-t border-white/20 pt-6 md:pt-8 w-full max-w-[200px] md:max-w-md">
-              <p className="text-xs md:text-base tracking-[0.3em] md:tracking-[0.4em] text-white/60 uppercase font-bold">
+          <div className="mt-10 md:mt-14 border-t border-white/20 pt-8 w-full max-w-[250px] md:max-w-md">
+              <p className="text-sm md:text-lg tracking-[0.4em] text-white/70 uppercase font-bold">
                   #JulioYScarleth
               </p>
           </div>
 
           {/* Créditos pequeños */}
-          <p className="mt-8 text-[10px] text-white/30">
+          <p className="mt-12 text-[10px] md:text-xs text-white/40 tracking-widest uppercase">
             Hecho con amor para nuestra boda &copy; 2026
           </p>
 
