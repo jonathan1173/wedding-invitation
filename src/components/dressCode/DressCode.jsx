@@ -48,11 +48,11 @@ const DressCode = ({
                     initial={{ opacity: 0, scale: 0.9 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     viewport={{ once: true }}
-                    className="text-4xl md:text-5xl font-bold  py-3  mb-6"
+                    className="text-3xl md:text-5xl font-bold  py-3  mb-6"
                 >
-                    <img src="./assets/images/icono/icono-1.png" alt="Icono izquierdo" className=" h-20 inline-block mr-2" />
+                    <img src="./assets/images/icono/icono-1.png" alt="Icono izquierdo" className=" h-18 inline-block mr-2" />
                     {title}
-                    <img src="./assets/images/icono/icono-2.png" alt="Icono derecho" className=" h-18 inline-block ml-2" />
+                    <img src="./assets/images/icono/icono-2.png" alt="Icono derecho" className=" h-16 inline-block ml-2" />
                 </motion.h1>
 
                 <h2 className="text-4xl md:text-5xl font-bold mb-4">Gala</h2>
