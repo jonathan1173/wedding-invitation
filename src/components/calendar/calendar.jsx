@@ -29,7 +29,7 @@ export default function WeddingCalendar() {
             </tr>
           </thead>
 
-          <tbody className="text-2xl md:text-3xl text-slate-700">
+          <tbody className="text-3xl md:text-4xl font-medium font-wedding text-[var(color-wedding)]">
             <tr>
               <td>30</td>
               <td>31</td>
