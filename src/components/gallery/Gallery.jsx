@@ -18,7 +18,7 @@ export default function Gallery() {
 
         {/* 1. FRASE (Arriba) - Reducimos el leading y el margen inferior */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-wedding text-[var(--color-wedding)] leading-[1.1] mb-2">
-          Nuestro amor da un paso más y nos encantaría que seas parte de este día inolvidable.
+          Nuestro amor da un paso más y nos emociona que seas parte de este día inolvidable.
         </h2>
 
         {/* 2. ILUSTRACIÓN MANOS (Centro) - Reducimos márgenes y ajustamos corazones */}

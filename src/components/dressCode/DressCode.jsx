@@ -25,7 +25,7 @@ const DressCode = ({
 
     return (
         <section className="relative bg-amber-50 py-10 px-4 overflow-hidden flex flex-col items-center justify-center">
-            
+
             {/* Ornamento Superior */}
             <motion.div
                 initial={{ opacity: 0, y: -20 }}
@@ -34,15 +34,15 @@ const DressCode = ({
                 viewport={{ once: true }}
                 className="mb-4"
             >
-                <img 
-                    src="./assets/images/ornamentos/ornamento-6.png" 
-                    className="w-full max-w-[200px] md:max-w-[300px] opacity-80 rotate-180" 
-                    alt="ornamento" 
+                <img
+                    src="./assets/images/ornamentos/ornamento-6.png"
+                    className="w-full max-w-[200px] md:max-w-[300px] opacity-80 rotate-180"
+                    alt="ornamento"
                 />
             </motion.div>
 
             <div className="flex flex-col items-center text-center w-full max-w-2xl mx-auto font-wedding text-[var(--color-wedding)]">
-                
+
                 {/* Título Compacto */}
                 <motion.h1
                     initial={{ opacity: 0, scale: 0.9 }}
@@ -50,11 +50,14 @@ const DressCode = ({
                     viewport={{ once: true }}
                     className="text-4xl md:text-5xl font-bold px-8 py-3  mb-6"
                 >
+                    <img src="./assets/images/icono/icono-1.png" alt="Icono izquierdo" className=" h-20 inline-block mr-2" />
                     {title}
+                    <img src="./assets/images/icono/icono-2.png" alt="Icono derecho" className=" h-18 inline-block ml-2" />
                 </motion.h1>
 
+                <h2 className="text-4xl md:text-5xl font-bold mb-4">Gala</h2>
                 {/* Mensaje con interlineado ajustado */}
-                <motion.p 
+                <motion.p
                     initial={{ opacity: 0 }}
                     whileInView={{ opacity: 1 }}
                     viewport={{ once: true }}
@@ -93,10 +96,10 @@ const DressCode = ({
                 viewport={{ once: true }}
                 className="mt-8"
             >
-                <img 
-                    src="./assets/images/ornamentos/ornamento-6.png" 
-                    className="w-full max-w-[200px] md:max-w-[300px] opacity-80" 
-                    alt="ornamento" 
+                <img
+                    src="./assets/images/ornamentos/ornamento-6.png"
+                    className="w-full max-w-[200px] md:max-w-[300px] opacity-80"
+                    alt="ornamento"
                 />
             </motion.div>
         </section>
